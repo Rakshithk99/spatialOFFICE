@@ -1,0 +1,16 @@
+<acceptance-test-run title="To Validate the Red line Creation for Shapes" name="To Validate the Red line Creation for Shapes" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="132416" timestamp="2024-08-12T11:13:05.098+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="5686">
+    <description>When I Click on the Shapes Button</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="97562">
+    <description>Then I Validate the Shapes listed</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="29166">
+    <description>And I Add the Shapes in the Selected Area</description>
+  </test-step>
+</acceptance-test-run>

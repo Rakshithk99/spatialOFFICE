@@ -1,0 +1,50 @@
+<acceptance-test-run title="To Validate the Home Passed Report from Report Manager" name="To Validate the Home Passed Report from Report Manager" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="137724" timestamp="2024-08-20T07:39:15.683+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>BoundaryID</header>
+      <header>JobID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+        <value>32267853</value>
+        <value>543</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO, BoundaryID=32267853, JobID=543}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3774">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31394">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29966">
+      <description>Then I Enter the 32267853 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14609">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10655">
+      <description>Given I validate Report Manager Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21770">
+      <description>Then I Click on Create Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="22956">
+      <description>Then I create the Home Passed Report with 32267853,543 and verify the Report created in the Report Manager Dashboard</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2588">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

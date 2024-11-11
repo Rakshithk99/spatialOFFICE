@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"To Validate the Smoke Tests for SDK Application","To Validate the Go to Location","FAILURE","2024-08-14T20:05:39.361+10:00","0.0","0.03"
+"To Validate the Smoke Tests for SDK Application","To Validate the OSM and GOOGLE Place","FAILURE","2024-08-14T20:33:41.887+10:00","0.0","0.03"
+"To Validate the Smoke Tests for SDK Application","To Validate the Previous View and Next View","FAILURE","2024-08-14T20:28:23.460+10:00","0.0","0.04"
+"To Validate the Smoke Tests for SDK Application","To Validate the Ruler","FAILURE","2024-08-14T20:05:36.222+10:00","0.0","0.13"
+"To Validate the Smoke Tests for SDK Application","To Validate the Set Master Circuit on Fibers","FAILURE","2024-08-14T20:31:12.850+10:00","0.0","0.04"
+"To Validate the Smoke Tests for SDK Application","To validate the LogOut icon","FAILURE","2024-08-14T20:31:15.024+10:00","0.0","0.04"
+"To Validate the Smoke Tests for SDK Application","Validating Theming for Graduated","FAILURE","2024-08-14T20:35:32.883+10:00","0.0","2.06"

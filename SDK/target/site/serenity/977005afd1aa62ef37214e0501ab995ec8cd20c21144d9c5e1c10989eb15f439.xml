@@ -1,0 +1,50 @@
+<acceptance-test-run title="To Validate the Rf Power Trace Diagram from Report Manager" name="To Validate the Rf Power Trace Diagram from Report Manager" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="133957" timestamp="2024-08-20T11:19:32.957+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>PowerSupplyID</header>
+      <header>JOBID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+        <value>PS744733</value>
+        <value>123456</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO, PowerSupplyID=PS744733, JOBID=123456}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2778">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31005">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29327">
+      <description>Then I Enter the PS744733 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14322">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10008">
+      <description>Given I validate Report Manager Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21580">
+      <description>Then I Click on Create Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="22592">
+      <description>And I create the Rf Power Trace Diagram Report with PS744733,123456 and verify the Report created in the Report Manager Dashboard</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2333">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

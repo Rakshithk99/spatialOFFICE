@@ -1,0 +1,52 @@
+<acceptance-test-run title="To validate the Trace Report from Reports Dropdown" name="To validate the Trace Report from Reports Dropdown" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="118947" timestamp="2024-08-20T06:56:31.082+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>ID</header>
+      <header>PhysicalSeq</header>
+      <header>Channel</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+        <value>PLEC10033103</value>
+        <value>5</value>
+        <value>10</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO, ID=PLEC10033103, PhysicalSeq=5, Channel=10}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3150">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31071">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="203">
+      <description>Then I Click on the reports dropdown</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29728">
+      <description>Given I Enter the PLEC10033103 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14360">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5878">
+      <description>Then I navigate to Trace Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="32140">
+      <description>And I validate the Trace Panel and enter 5,10 details</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2407">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

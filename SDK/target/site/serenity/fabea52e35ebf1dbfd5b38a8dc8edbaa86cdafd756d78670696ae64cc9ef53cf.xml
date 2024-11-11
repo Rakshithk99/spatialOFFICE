@@ -1,0 +1,54 @@
+<acceptance-test-run title="To Validate the Blown Fiber Schematic Report from Report Manager" name="To Validate the Blown Fiber Schematic Report from Report Manager" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="139389" timestamp="2024-08-20T11:33:32.160+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>SUPPORTTUBEID</header>
+      <header>Port</header>
+      <header>Channel</header>
+      <header>JobID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+        <value>R2678483190</value>
+        <value>8</value>
+        <value>13</value>
+        <value>543</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO, SUPPORTTUBEID=R2678483190, Port=8, Channel=13, JobID=543}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2882">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30971">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29264">
+      <description>Then I Enter the R2678483190 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14213">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9916">
+      <description>Given I validate Report Manager Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21553">
+      <description>Then I Click on Create Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="28338">
+      <description>Then I create the Blown Fiber Schematic Report with &lt;FiberCableID&gt;,8,13,543 and verify the Report created in the Report Manager Dashboard</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2246">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

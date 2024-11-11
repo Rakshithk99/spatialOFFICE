@@ -1,0 +1,514 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_UNCAUGHT_CXX_EXCEPTION (0xe06d7363) at pc=0x75dbdf72, pid=772, tid=0x00003298
+#
+# JRE version: OpenJDK Runtime Environment (8.0_332-b08) (build 1.8.0_332-b08)
+# Java VM: OpenJDK Server VM (25.332-b08 mixed mode windows-x86 )
+# Problematic frame:
+# C  [KERNELBASE.dll+0x12df72]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/corretto/corretto-8/issues/
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x418c1800):  JavaThread "pool-11-thread-1" [_thread_in_native, id=12952, stack(0x46c00000,0x46c50000)]
+
+siginfo: ExceptionCode=0xe06d7363, ExceptionInformation=0x19930520 0x46c4f5df 0x6127f518 
+
+Registers:
+EAX=0x46c4f520, EBX=0x00000000, ECX=0x00000003, EDX=0x00000000
+ESP=0x46c4f520, EBP=0x46c4f57c, ESI=0x6127f518, EDI=0x46c4f5df
+EIP=0x75dbdf72, EFLAGS=0x00000212
+
+Top of Stack: (sp=0x46c4f520)
+0x46c4f520:   e06d7363 00000001 00000000 75dbdf72
+0x46c4f530:   00000003 19930520 46c4f5df 6127f518
+0x46c4f540:   fffffffe 46c4f5a4 612f8600 0ec0cbac
+0x46c4f550:   418c19a0 418c1800 0ec0cb58 418c19a0
+0x46c4f560:   418c1800 0ec0cb54 418c19a0 418c1800
+0x46c4f570:   40198710 4a88d67e 4019870c 46c4f5bc
+0x46c4f580:   61928a19 e06d7363 00000001 00000003
+0x46c4f590:   46c4f5b0 4019870c 418c19a0 e06d7363 
+
+Instructions: (pc=0x75dbdf72)
+0x75dbdf52:   89 44 24 10 c1 e0 02 50 51 8d 44 24 1c 50 e8 9f
+0x75dbdf62:   f3 00 00 83 c4 0c 8d 04 24 50 ff 15 10 34 e7 75
+0x75dbdf72:   8b 4c 24 54 33 cc e8 23 4f 00 00 8b e5 5d c2 10
+0x75dbdf82:   00 83 64 24 10 00 eb de 6a 0f 58 eb c3 cc cc cc 
+
+
+Register to memory mapping:
+
+EAX=0x46c4f520 is pointing into the stack for thread: 0x418c1800
+EBX=0x00000000 is an unknown value
+ECX=0x00000003 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0x46c4f520 is pointing into the stack for thread: 0x418c1800
+EBP=0x46c4f57c is pointing into the stack for thread: 0x418c1800
+ESI=0x6127f518 is an unknown value
+EDI=0x46c4f5df is pointing into the stack for thread: 0x418c1800
+
+
+Stack: [0x46c00000,0x46c50000],  sp=0x46c4f520,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [KERNELBASE.dll+0x12df72]
+C  [msvcr120.dll+0x18a19]
+C  [awt.dll+0xb4c56]
+C  [awt.dll+0xae5f9]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 2340  sun.awt.Win32GraphicsConfig.getBounds(I)Ljava/awt/Rectangle; (0 bytes) @ 0x03038663 [0x03038620+0x43]
+J 7263 C2 java.awt.MouseInfo.getPointerInfo()Ljava/awt/PointerInfo; (143 bytes) @ 0x0355fa7c [0x0355f820+0x25c]
+J 7546 C2 org.monte.screenrecorder.ScreenRecorder$MouseGrabber.grabMouse()V (187 bytes) @ 0x03b10e08 [0x03b10d60+0xa8]
+J 7288 C2 org.monte.screenrecorder.ScreenRecorder$MouseGrabber.run()V (31 bytes) @ 0x031c3400 [0x031c33e0+0x20]
+J 7213 C2 java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run()V (59 bytes) @ 0x0356d748 [0x0356d680+0xc8]
+J 5133% C2 java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V (225 bytes) @ 0x035289d4 [0x035287a0+0x234]
+j  java.util.concurrent.ThreadPoolExecutor$Worker.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x4208d400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=3040, stack(0x49e50000,0x49ea0000)]
+  0x4208cc00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=17060, stack(0x49d20000,0x49d70000)]
+  0x4208c400 JavaThread "UrlChecker-19" daemon [_thread_blocked, id=19372, stack(0x49c90000,0x49ce0000)]
+  0x4208c000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=7416, stack(0x49730000,0x49780000)]
+  0x4208b800 JavaThread "pool-48-thread-1" [_thread_blocked, id=17584, stack(0x49600000,0x49650000)]
+  0x4208b000 JavaThread "pool-47-thread-1" [_thread_blocked, id=9312, stack(0x49570000,0x495c0000)]
+  0x4208f400 JavaThread "Thread-29" [_thread_blocked, id=14748, stack(0x494e0000,0x49530000)]
+  0x4208e800 JavaThread "Thread-28" [_thread_blocked, id=5896, stack(0x49180000,0x491d0000)]
+  0x4208ac00 JavaThread "Thread-27" [_thread_blocked, id=19836, stack(0x493c0000,0x49410000)]
+  0x42089000 JavaThread "Thread-26" [_thread_blocked, id=8004, stack(0x49330000,0x49380000)]
+  0x42090400 JavaThread "Thread-25" [_thread_blocked, id=248, stack(0x492a0000,0x492f0000)]
+  0x42089800 JavaThread "Thread-24" [_thread_blocked, id=12800, stack(0x49210000,0x49260000)]
+  0x41263c00 JavaThread "Thread-23" [_thread_blocked, id=20540, stack(0x496a0000,0x496f0000)]
+  0x41263400 JavaThread "Thread-22" [_thread_blocked, id=16116, stack(0x490f0000,0x49140000)]
+  0x41eb5400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=20588, stack(0x49060000,0x490b0000)]
+  0x41264800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=14528, stack(0x48fd0000,0x49020000)]
+  0x41262c00 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=21056, stack(0x49c00000,0x49c50000)]
+  0x41267800 JavaThread "pool-39-thread-1" [_thread_blocked, id=12900, stack(0x49b70000,0x49bc0000)]
+  0x41269400 JavaThread "pool-38-thread-1" [_thread_blocked, id=18724, stack(0x49ae0000,0x49b30000)]
+  0x41268800 JavaThread "Thread-21" [_thread_blocked, id=12184, stack(0x49930000,0x49980000)]
+  0x41268000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=10164, stack(0x49a50000,0x49aa0000)]
+  0x41266400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=12636, stack(0x499c0000,0x49a10000)]
+  0x41265c00 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=12764, stack(0x498a0000,0x498f0000)]
+  0x41266c00 JavaThread "pool-37-thread-1" [_thread_blocked, id=2008, stack(0x49dc0000,0x49e10000)]
+  0x41265800 JavaThread "pool-36-thread-1" [_thread_blocked, id=19532, stack(0x49810000,0x49860000)]
+  0x41267000 JavaThread "Thread-20" [_thread_blocked, id=19472, stack(0x48d20000,0x48d70000)]
+  0x41262800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=14776, stack(0x49780000,0x497d0000)]
+  0x41265000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=15456, stack(0x48db0000,0x48e00000)]
+  0x41262000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=7340, stack(0x48c90000,0x48ce0000)]
+  0x41268c00 JavaThread "pool-35-thread-1" [_thread_blocked, id=7732, stack(0x48c00000,0x48c50000)]
+  0x42110000 JavaThread "pool-34-thread-1" [_thread_blocked, id=13268, stack(0x48b70000,0x48bc0000)]
+  0x41eb8c00 JavaThread "Thread-19" [_thread_blocked, id=21416, stack(0x48ae0000,0x48b30000)]
+  0x4125ec00 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=20640, stack(0x431e0000,0x43230000)]
+  0x41eb7800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=11968, stack(0x48950000,0x489a0000)]
+  0x41eb6800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=4120, stack(0x488c0000,0x48910000)]
+  0x41eb4c00 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=8668, stack(0x487a0000,0x487f0000)]
+  0x41ebb800 JavaThread "pool-33-thread-1" [_thread_blocked, id=11640, stack(0x48710000,0x48760000)]
+  0x41ebb400 JavaThread "pool-32-thread-1" [_thread_blocked, id=1316, stack(0x48680000,0x486d0000)]
+  0x41eb9800 JavaThread "Thread-18" [_thread_blocked, id=5356, stack(0x484f0000,0x48540000)]
+  0x41eb8400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=17884, stack(0x4c840000,0x4c890000)]
+  0x41eb9000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=12964, stack(0x4c7b0000,0x4c800000)]
+  0x41eba400 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=11348, stack(0x48460000,0x484b0000)]
+  0x41eba000 JavaThread "pool-31-thread-1" [_thread_blocked, id=17504, stack(0x483d0000,0x48420000)]
+  0x41ebac00 JavaThread "pool-30-thread-1" [_thread_blocked, id=15672, stack(0x48340000,0x48390000)]
+  0x41eb7c00 JavaThread "Thread-17" [_thread_blocked, id=9812, stack(0x47e30000,0x47e80000)]
+  0x41eb5c00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=4072, stack(0x482b0000,0x48300000)]
+  0x41eb7000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=12012, stack(0x48220000,0x48270000)]
+  0x41ebc000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=2272, stack(0x48190000,0x481e0000)]
+  0x418c2400 JavaThread "pool-29-thread-1" [_thread_blocked, id=19024, stack(0x48100000,0x48150000)]
+  0x4210ec00 JavaThread "pool-28-thread-1" [_thread_blocked, id=18060, stack(0x48070000,0x480c0000)]
+  0x4210e800 JavaThread "Thread-16" [_thread_blocked, id=19692, stack(0x47fe0000,0x48030000)]
+  0x42112400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=12364, stack(0x47f50000,0x47fa0000)]
+  0x42111000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=19872, stack(0x47ec0000,0x47f10000)]
+  0x4210fc00 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=20608, stack(0x47da0000,0x47df0000)]
+  0x42114400 JavaThread "pool-27-thread-1" [_thread_blocked, id=5904, stack(0x48f40000,0x48f90000)]
+  0x4210d400 JavaThread "pool-26-thread-1" [_thread_blocked, id=1236, stack(0x48eb0000,0x48f00000)]
+  0x4210f400 JavaThread "Thread-15" [_thread_blocked, id=14268, stack(0x47ab0000,0x47b00000)]
+  0x4210d800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=18556, stack(0x47bd0000,0x47c20000)]
+  0x4210e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=2148, stack(0x47b40000,0x47b90000)]
+  0x42110800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=1708, stack(0x47a20000,0x47a70000)]
+  0x42111400 JavaThread "pool-25-thread-1" [_thread_blocked, id=3376, stack(0x47990000,0x479e0000)]
+  0x42114000 JavaThread "pool-24-thread-1" [_thread_blocked, id=15680, stack(0x47900000,0x47950000)]
+  0x42112c00 JavaThread "Thread-14" [_thread_blocked, id=20988, stack(0x47470000,0x474c0000)]
+  0x42111c00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=10480, stack(0x476c0000,0x47710000)]
+  0x42113000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=21500, stack(0x47500000,0x47550000)]
+  0x44942000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=18748, stack(0x473e0000,0x47430000)]
+  0x44948c00 JavaThread "pool-23-thread-1" [_thread_blocked, id=11316, stack(0x47350000,0x473a0000)]
+  0x4125a800 JavaThread "pool-22-thread-1" [_thread_blocked, id=18188, stack(0x472c0000,0x47310000)]
+  0x4125a000 JavaThread "Thread-13" [_thread_blocked, id=8456, stack(0x47230000,0x47280000)]
+  0x41261400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=21084, stack(0x471a0000,0x471f0000)]
+  0x41260800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=19972, stack(0x47110000,0x47160000)]
+  0x4125f800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=8180, stack(0x46ff0000,0x47040000)]
+  0x4125f000 JavaThread "pool-21-thread-1" [_thread_blocked, id=18460, stack(0x46f60000,0x46fb0000)]
+  0x4125d800 JavaThread "pool-20-thread-1" [_thread_blocked, id=11412, stack(0x46ed0000,0x46f20000)]
+  0x4125d000 JavaThread "Thread-12" [_thread_blocked, id=21208, stack(0x46e40000,0x46e90000)]
+  0x41260c00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=16364, stack(0x46db0000,0x46e00000)]
+  0x4125b400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=18968, stack(0x47870000,0x478c0000)]
+  0x4125c800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=20680, stack(0x467e0000,0x46830000)]
+  0x4125ac00 JavaThread "pool-19-thread-1" [_thread_blocked, id=18096, stack(0x45790000,0x457e0000)]
+  0x4125dc00 JavaThread "pool-18-thread-1" [_thread_blocked, id=19268, stack(0x43e30000,0x43e80000)]
+  0x4125c400 JavaThread "Thread-11" [_thread_blocked, id=18864, stack(0x43c80000,0x43cd0000)]
+  0x4125e400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=1424, stack(0x477e0000,0x47830000)]
+  0x418c1000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=14688, stack(0x47750000,0x477a0000)]
+  0x44944800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=948, stack(0x47630000,0x47680000)]
+  0x44944000 JavaThread "pool-17-thread-1" [_thread_blocked, id=16052, stack(0x475a0000,0x475f0000)]
+  0x44943c00 JavaThread "pool-16-thread-1" [_thread_blocked, id=11304, stack(0x46d20000,0x46d70000)]
+  0x44942c00 JavaThread "Thread-10" [_thread_blocked, id=11360, stack(0x46c90000,0x46ce0000)]
+  0x44945400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=17268, stack(0x48630000,0x48680000)]
+  0x44945000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=21036, stack(0x485a0000,0x485f0000)]
+  0x44948400 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=5788, stack(0x47d10000,0x47d60000)]
+  0x44946c00 JavaThread "pool-15-thread-1" [_thread_blocked, id=17552, stack(0x47c80000,0x47cd0000)]
+  0x44947000 JavaThread "pool-14-thread-1" [_thread_blocked, id=12932, stack(0x46a20000,0x46a70000)]
+  0x44948000 JavaThread "Thread-9" [_thread_blocked, id=12092, stack(0x45820000,0x45870000)]
+  0x44942800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=144, stack(0x46990000,0x469e0000)]
+  0x44946400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=6020, stack(0x46900000,0x46950000)]
+  0x44947800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=19200, stack(0x46750000,0x467a0000)]
+  0x44941800 JavaThread "pool-13-thread-1" [_thread_blocked, id=6088, stack(0x466c0000,0x46710000)]
+  0x44945c00 JavaThread "pool-12-thread-1" [_thread_blocked, id=20428, stack(0x46530000,0x46580000)]
+  0x44943400 JavaThread "Thread-8" [_thread_blocked, id=20872, stack(0x46380000,0x463d0000)]
+  0x414b2400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=19328, stack(0x464a0000,0x464f0000)]
+  0x418c3400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=1748, stack(0x46410000,0x46460000)]
+  0x418bd400 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=17684, stack(0x462f0000,0x46340000)]
+=>0x418c1800 JavaThread "pool-11-thread-1" [_thread_in_native, id=12952, stack(0x46c00000,0x46c50000)]
+  0x418bf400 JavaThread "pool-10-thread-1" [_thread_blocked, id=12224, stack(0x46b70000,0x46bc0000)]
+  0x418bc400 JavaThread "Thread-7" [_thread_blocked, id=19976, stack(0x46120000,0x46170000)]
+  0x418c0400 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=7144, stack(0x46ae0000,0x46b30000)]
+  0x418c1c00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=10096, stack(0x461b0000,0x46200000)]
+  0x418c2c00 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=17328, stack(0x46090000,0x460e0000)]
+  0x418bcc00 JavaThread "pool-9-thread-1" [_thread_blocked, id=13640, stack(0x46000000,0x46050000)]
+  0x418c0800 JavaThread "pool-8-thread-1" [_thread_blocked, id=14612, stack(0x45f70000,0x45fc0000)]
+  0x418bf000 JavaThread "Thread-6" [_thread_blocked, id=20896, stack(0x45dc0000,0x45e10000)]
+  0x418bfc00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=13148, stack(0x45ee0000,0x45f30000)]
+  0x418be800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=13164, stack(0x45e50000,0x45ea0000)]
+  0x418bdc00 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=2964, stack(0x45d30000,0x45d80000)]
+  0x418bc000 JavaThread "pool-7-thread-1" [_thread_blocked, id=6336, stack(0x45ca0000,0x45cf0000)]
+  0x414b6000 JavaThread "pool-6-thread-1" [_thread_blocked, id=20708, stack(0x45c10000,0x45c60000)]
+  0x414b3800 JavaThread "Thread-5" [_thread_blocked, id=6132, stack(0x45b80000,0x45bd0000)]
+  0x414b6800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=12432, stack(0x45af0000,0x45b40000)]
+  0x414b3c00 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=9840, stack(0x45a60000,0x45ab0000)]
+  0x414b5800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=17368, stack(0x46260000,0x462b0000)]
+  0x414b7c00 JavaThread "pool-5-thread-1" [_thread_blocked, id=9820, stack(0x459d0000,0x45a20000)]
+  0x414b6c00 JavaThread "pool-4-thread-1" [_thread_blocked, id=6440, stack(0x45940000,0x45990000)]
+  0x414b3000 JavaThread "Thread-4" [_thread_blocked, id=18668, stack(0x458b0000,0x45900000)]
+  0x414b8000 JavaThread "pool-3-thread-8" [_thread_blocked, id=19316, stack(0x44600000,0x44650000)]
+  0x414b4c00 JavaThread "pool-3-thread-7" [_thread_blocked, id=21236, stack(0x44570000,0x445c0000)]
+  0x414b2800 JavaThread "pool-3-thread-6" [_thread_blocked, id=10872, stack(0x444e0000,0x44530000)]
+  0x414b1400 JavaThread "pool-3-thread-5" [_thread_blocked, id=20948, stack(0x43bf0000,0x43c40000)]
+  0x414b0c00 JavaThread "pool-3-thread-4" [_thread_blocked, id=20596, stack(0x00e30000,0x00e80000)]
+  0x414b5000 JavaThread "pool-3-thread-3" [_thread_blocked, id=20732, stack(0x44350000,0x443a0000)]
+  0x414b4400 JavaThread "pool-3-thread-2" [_thread_blocked, id=20892, stack(0x442c0000,0x44310000)]
+  0x414b1c00 JavaThread "pool-3-thread-1" [_thread_blocked, id=7528, stack(0x42920000,0x42970000)]
+  0x41b6e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=2044, stack(0x43da0000,0x43df0000)]
+  0x41b6e800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=6276, stack(0x43d10000,0x43d60000)]
+  0x41b6d400 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=18632, stack(0x43a60000,0x43ab0000)]
+  0x419d7400 JavaThread "pool-2-thread-1" [_thread_blocked, id=13124, stack(0x43490000,0x434e0000)]
+  0x419d6c00 JavaThread "pool-1-thread-1" [_thread_blocked, id=9304, stack(0x43400000,0x43450000)]
+  0x419d6400 JavaThread "Thread-2" [_thread_blocked, id=20924, stack(0x43370000,0x433c0000)]
+  0x41a26800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=19956, stack(0x43010000,0x43060000)]
+  0x41a15800 JavaThread "AWT-Shutdown" [_thread_blocked, id=1984, stack(0x42f80000,0x42fd0000)]
+  0x41a14c00 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=19288, stack(0x42ef0000,0x42f40000)]
+  0x41540000 JavaThread "com.google.inject.internal.util.$Finalizer" daemon [_thread_blocked, id=19444, stack(0x42590000,0x425e0000)]
+  0x40745000 JavaThread "surefire-forkedjvm-command-thread" daemon [_thread_in_native, id=2264, stack(0x40c30000,0x40c80000)]
+  0x40725c00 JavaThread "last-ditch-daemon-shutdown-thread-30sec" daemon [_thread_blocked, id=18572, stack(0x40ba0000,0x40bf0000)]
+  0x4016a400 JavaThread "Service Thread" daemon [_thread_blocked, id=20700, stack(0x40a80000,0x40ad0000)]
+  0x401c4800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=12504, stack(0x405f0000,0x40640000)]
+  0x40179400 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=5912, stack(0x40560000,0x405b0000)]
+  0x40167800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=20024, stack(0x404d0000,0x40520000)]
+  0x4016bc00 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=9996, stack(0x40440000,0x40490000)]
+  0x40172000 JavaThread "Attach Listener" daemon [_thread_blocked, id=7984, stack(0x403b0000,0x40400000)]
+  0x4016f000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=16436, stack(0x40320000,0x40370000)]
+  0x4014bc00 JavaThread "Finalizer" daemon [_thread_blocked, id=2700, stack(0x3fe60000,0x3feb0000)]
+  0x40145c00 JavaThread "Reference Handler" daemon [_thread_blocked, id=20484, stack(0x3fdd0000,0x3fe20000)]
+  0x011cac00 JavaThread "main" [_thread_blocked, id=21260, stack(0x01000000,0x01050000)]
+
+Other Threads:
+  0x40131400 VMThread [stack: 0x3fd40000,0x3fd90000] [id=18428]
+  0x401da000 WatcherThread [stack: 0x40b10000,0x40b60000] [id=13060]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x011c8ab0] Threads_lock - owner thread: 0x40131400
+[0x011c8ff8] Heap_lock - owner thread: 0x4125dc00
+
+OutOfMemory and StackOverflow Exception counts:
+OutOfMemoryError java_heap_errors=23
+
+Heap:
+ PSYoungGen      total 165632K, used 92416K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 100% used [0x2f0c0000,0x34b00000,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+
+Card table byte_map: [0x3da00000,0x3db60000] byte_map_base: 0x3d971000
+
+Marking Bits: (ParMarkBitMap*) 0x618a5768
+ Begin Bits: [0x3e000000, 0x3eaf0000)
+ End Bits:   [0x3eaf0000, 0x3f5e0000)
+
+Polling page: 0x00ef0000
+
+CodeCache: size=245760Kb used=20304Kb max_used=20343Kb free=225455Kb
+ bounds [0x02a30000, 0x03e30000, 0x11a30000]
+ total_blobs=6948 nmethods=6688 adapters=173
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 2460.831 Thread 0x401c4800 8463       3       java.util.LinkedHashMap::keySet (25 bytes)
+Event: 2460.831 Thread 0x401c4800 nmethod 8463 0x032f7c08 code [0x032f7d40, 0x032f7fc0]
+Event: 2461.055 Thread 0x401c4800 8464       3       java.util.LinkedHashMap$LinkedKeySet::iterator (12 bytes)
+Event: 2461.055 Thread 0x401c4800 nmethod 8464 0x033aa3c8 code [0x033aa4e0, 0x033aa720]
+Event: 2465.453 Thread 0x401c4800 8466       1       sun.nio.cs.ISO_8859_1$Encoder::isLegalReplacement (2 bytes)
+Event: 2465.453 Thread 0x401c4800 nmethod 8466 0x02fe7608 code [0x02fe7700, 0x02fe77a0]
+Event: 2466.345 Thread 0x4016bc00 8467       4       com.google.gson.JsonElement::isJsonPrimitive (5 bytes)
+Event: 2466.346 Thread 0x4016bc00 nmethod 8467 0x02c34988 code [0x02c34a80, 0x02c34ad0]
+Event: 2469.727 Thread 0x401c4800 8468       3       org.apache.maven.surefire.util.internal.StringUtils::requireNonNull (15 bytes)
+Event: 2469.728 Thread 0x401c4800 nmethod 8468 0x034d1848 code [0x034d1960, 0x034d1acc]
+
+GC Heap History (10 events):
+Event: 2484.311 GC heap before
+{Heap before GC invocations=19975 (full 12228):
+ PSYoungGen      total 165632K, used 92415K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 99% used [0x2f0c0000,0x34affff8,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+Event: 2484.387 GC heap after
+Heap after GC invocations=19975 (full 12228):
+ PSYoungGen      total 165632K, used 92377K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 99% used [0x2f0c0000,0x34af66d8,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+}
+Event: 2484.389 GC heap before
+{Heap before GC invocations=19976 (full 12229):
+ PSYoungGen      total 165632K, used 92416K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 100% used [0x2f0c0000,0x34b00000,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+Event: 2484.463 GC heap after
+Heap after GC invocations=19976 (full 12229):
+ PSYoungGen      total 165632K, used 92378K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 99% used [0x2f0c0000,0x34af6948,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+}
+Event: 2484.465 GC heap before
+{Heap before GC invocations=19977 (full 12230):
+ PSYoungGen      total 165632K, used 92416K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 100% used [0x2f0c0000,0x34b00000,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+Event: 2484.533 GC heap after
+Heap after GC invocations=19977 (full 12230):
+ PSYoungGen      total 165632K, used 92378K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 99% used [0x2f0c0000,0x34af6b70,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+}
+Event: 2484.536 GC heap before
+{Heap before GC invocations=19978 (full 12231):
+ PSYoungGen      total 165632K, used 92416K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 100% used [0x2f0c0000,0x34b00000,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+Event: 2484.607 GC heap after
+Heap after GC invocations=19978 (full 12231):
+ PSYoungGen      total 165632K, used 92379K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 99% used [0x2f0c0000,0x34af6de8,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+}
+Event: 2484.610 GC heap before
+{Heap before GC invocations=19979 (full 12232):
+ PSYoungGen      total 165632K, used 92416K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 100% used [0x2f0c0000,0x34b00000,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+Event: 2484.689 GC heap after
+Heap after GC invocations=19979 (full 12232):
+ PSYoungGen      total 165632K, used 92365K [0x2f0c0000, 0x3da00000, 0x3da00000)
+  eden space 92416K, 99% used [0x2f0c0000,0x34af3610,0x34b00000)
+  from space 73216K, 0% used [0x39280000,0x39280000,0x3da00000)
+  to   space 73216K, 0% used [0x34b00000,0x34b00000,0x39280000)
+ ParOldGen       total 477952K, used 477769K [0x11e00000, 0x2f0c0000, 0x2f0c0000)
+  object space 477952K, 99% used [0x11e00000,0x2f092400,0x2f0c0000)
+ Metaspace       used 24541K, capacity 24800K, committed 24960K, reserved 24960K
+}
+
+Deoptimization events (10 events):
+Event: 2434.208 Thread 0x011cac00 Uncommon trap: reason=unstable_if action=reinterpret pc=0x033c1d84 method=com.google.gson.stream.JsonReader.fillBuffer(I)Z @ 108
+Event: 2434.211 Thread 0x011cac00 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0375677c method=java.io.File.<init>(Ljava/io/File;Ljava/lang/String;)V @ 22
+Event: 2434.214 Thread 0x011cac00 Uncommon trap: reason=class_check action=maybe_recompile pc=0x02ce619c method=java.util.Collections$SynchronizedCollection.iterator()Ljava/util/Iterator; @ 4
+Event: 2434.224 Thread 0x011cac00 Uncommon trap: reason=class_check action=maybe_recompile pc=0x02ce619c method=java.util.Collections$SynchronizedCollection.iterator()Ljava/util/Iterator; @ 4
+Event: 2435.032 Thread 0x011cac00 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0332df78 method=java.lang.Class.argumentTypesToString([Ljava/lang/Class;)Ljava/lang/String; @ 29
+Event: 2435.066 Thread 0x011cac00 Uncommon trap: reason=class_check action=maybe_recompile pc=0x02df0ffc method=java.lang.AbstractStringBuilder.append(Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; @ 26
+Event: 2435.066 Thread 0x011cac00 Uncommon trap: reason=class_check action=maybe_recompile pc=0x02e505d4 method=java.lang.AbstractStringBuilder.append(Ljava/lang/CharSequence;II)Ljava/lang/AbstractStringBuilder; @ 18
+Event: 2435.066 Thread 0x011cac00 Uncommon trap: reason=class_check action=maybe_recompile pc=0x02df0ffc method=java.lang.AbstractStringBuilder.append(Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; @ 26
+Event: 2435.066 Thread 0x011cac00 Uncommon trap: reason=class_check action=maybe_recompile pc=0x02e505d4 method=java.lang.AbstractStringBuilder.append(Ljava/lang/CharSequence;II)Ljava/lang/AbstractStringBuilder; @ 18
+Event: 2484.690 Thread 0x41a15800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x02b250f0 method=sun.awt.AWTAutoShutdown.run()V @ 51
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 2466.257 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34acd438) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2476.434 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x33b16ce0) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2476.436 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x33b17348) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2476.610 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34ae93a0) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2476.684 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34afe5d8) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2476.908 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34aeaa68) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2477.060 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34aeaf48) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2477.307 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34aebd60) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2477.547 Thread 0x011cac00 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x34ae9b80) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 738]
+Event: 2484.690 Thread 0x418c1800 Exception <a 'java/lang/OutOfMemoryError'> (0x130cfe00) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\gc_interface/collectedHeap.inline.hpp, line 179]
+
+Events (10 events):
+Event: 2484.387 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2484.387 Executing VM operation: ParallelGCFailedAllocation
+Event: 2484.463 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2484.463 Executing VM operation: ParallelGCFailedAllocation
+Event: 2484.533 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2484.534 Executing VM operation: ParallelGCFailedAllocation
+Event: 2484.607 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2484.608 Executing VM operation: ParallelGCFailedAllocation
+Event: 2484.689 Executing VM operation: ParallelGCFailedAllocation done
+Event: 2484.690 Thread 0x41a15800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x02b250f0
+
+
+Dynamic libraries:
+0x00f80000 - 0x00fb5000 	C:\temp\jdk1.8.0_332\jre\bin\java.exe
+0x77450000 - 0x775f4000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x77220000 - 0x77310000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x75c90000 - 0x75eac000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x6e6e0000 - 0x6e780000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x76a80000 - 0x76afb000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x76f40000 - 0x76fff000 	C:\WINDOWS\System32\msvcrt.dll
+0x770f0000 - 0x77166000 	C:\WINDOWS\System32\sechost.dll
+0x75810000 - 0x758ce000 	C:\WINDOWS\System32\RPCRT4.dll
+0x75550000 - 0x756ed000 	C:\WINDOWS\System32\USER32.dll
+0x75eb0000 - 0x75ec8000 	C:\WINDOWS\System32\win32u.dll
+0x757e0000 - 0x75803000 	C:\WINDOWS\System32\GDI32.dll
+0x758d0000 - 0x759b0000 	C:\WINDOWS\System32\gdi32full.dll
+0x77310000 - 0x7738b000 	C:\WINDOWS\System32\msvcp_win.dll
+0x75330000 - 0x75450000 	C:\WINDOWS\System32\ucrtbase.dll
+0x6da70000 - 0x6dc80000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_a8625c1886757984\COMCTL32.dll
+0x770c0000 - 0x770e5000 	C:\WINDOWS\System32\IMM32.DLL
+0x61910000 - 0x619fe000 	C:\temp\jdk1.8.0_332\jre\bin\msvcr120.dll
+0x61c10000 - 0x61c81000 	C:\temp\jdk1.8.0_332\jre\bin\msvcp120.dll
+0x612f0000 - 0x6190f000 	C:\temp\jdk1.8.0_332\jre\bin\server\jvm.dll
+0x75320000 - 0x75326000 	C:\WINDOWS\System32\PSAPI.DLL
+0x74f40000 - 0x74f48000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x750f0000 - 0x750f8000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x72ab0000 - 0x72ad8000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x76590000 - 0x765f3000 	C:\WINDOWS\System32\WS2_32.dll
+0x6e5b0000 - 0x6e5bd000 	C:\temp\jdk1.8.0_332\jre\bin\verify.dll
+0x6d860000 - 0x6d884000 	C:\temp\jdk1.8.0_332\jre\bin\java.dll
+0x6e3d0000 - 0x6e3e4000 	C:\temp\jdk1.8.0_332\jre\bin\zip.dll
+0x75f70000 - 0x76525000 	C:\WINDOWS\System32\SHELL32.dll
+0x71040000 - 0x7164a000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x76600000 - 0x76880000 	C:\WINDOWS\System32\combase.dll
+0x70f80000 - 0x70fa7000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x76890000 - 0x76917000 	C:\WINDOWS\System32\SHCORE.dll
+0x77170000 - 0x771b5000 	C:\WINDOWS\System32\shlwapi.dll
+0x70300000 - 0x70318000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x6d730000 - 0x6d746000 	C:\temp\jdk1.8.0_332\jre\bin\net.dll
+0x700a0000 - 0x700f2000 	C:\WINDOWS\system32\mswsock.dll
+0x6d850000 - 0x6d85f000 	C:\temp\jdk1.8.0_332\jre\bin\nio.dll
+0x611a0000 - 0x612e9000 	C:\temp\jdk1.8.0_332\jre\bin\awt.dll
+0x75ed0000 - 0x75f66000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x6e300000 - 0x6e374000 	C:\WINDOWS\system32\uxtheme.dll
+0x75b20000 - 0x75bf4000 	C:\WINDOWS\System32\MSCTF.dll
+0x756f0000 - 0x757d3000 	C:\WINDOWS\System32\ole32.dll
+0x74f50000 - 0x74f5f000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x77060000 - 0x770bf000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x6e290000 - 0x6e2b6000 	C:\WINDOWS\system32\DWMAPI.DLL
+0x67120000 - 0x67224000 	C:\WINDOWS\system32\opengl32.dll
+0x670e0000 - 0x6711f000 	C:\WINDOWS\SYSTEM32\GLU32.dll
+0x72ec0000 - 0x72f50000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x72e80000 - 0x72eb2000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x75310000 - 0x75317000 	C:\WINDOWS\System32\NSI.dll
+0x70340000 - 0x70348000 	C:\Windows\System32\rasadhlp.dll
+0x6ff70000 - 0x6ffc9000 	C:\WINDOWS\System32\fwpuclnt.dll
+0x77200000 - 0x77219000 	C:\WINDOWS\System32\bcrypt.dll
+0x6d690000 - 0x6d6b3000 	C:\temp\jdk1.8.0_332\jre\bin\sunec.dll
+0x70430000 - 0x70443000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x70400000 - 0x7042f000 	C:\WINDOWS\system32\rsaenh.dll
+0x737e0000 - 0x73805000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x72a70000 - 0x72a7a000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x70390000 - 0x703a4000 	C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+0x70370000 - 0x70386000 	C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+0x6d670000 - 0x6d681000 	C:\WINDOWS\system32\napinsp.dll
+0x61d10000 - 0x61d26000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x6e3b0000 - 0x6e3c0000 	C:\WINDOWS\system32\wshbth.dll
+0x62af0000 - 0x62b06000 	C:\WINDOWS\system32\NLAapi.dll
+0x6ddb0000 - 0x6ddbe000 	C:\WINDOWS\System32\winrnr.dll
+0x67a10000 - 0x67b98000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+java_command: C:\temp\apache-maven-3.6.0\bin\target\surefire\surefirebooter4762235807775739000.jar C:\temp\apache-maven-3.6.0\bin\target\surefire\surefire2213954295620891284tmp C:\temp\apache-maven-3.6.0\bin\target\surefire\surefire_02350423952813204933tmp
+java_class_path (initial): C:\temp\apache-maven-3.6.0\bin\target\surefire\surefirebooter4762235807775739000.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\temp\jdk1.8.0_332
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Oracle\product\12.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\mel.azure.build\AppData\Local\Microsoft\WindowsApps;
+USERNAME=mel.azure.build
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1889)
+
+CPU:total 8 (initial active 8) (8 cores per cpu, 1 threads per core) family 23 model 49 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, bmi1
+
+Memory: 4k page, physical 67108324k(52726656k free), swap 77069796k(61490116k free)
+
+vm_info: OpenJDK Server VM (25.332-b08) for windows-x86 JRE (1.8.0_332-b08), built on Apr 16 2022 08:25:26 by "Administrator" with MS VC++ 12.0 (VS2013)
+
+time: Wed Nov 09 14:37:25 2022
+timezone: E. Australia Standard Time
+elapsed time: 2484.739757 seconds (0d 0h 41m 24s)
+

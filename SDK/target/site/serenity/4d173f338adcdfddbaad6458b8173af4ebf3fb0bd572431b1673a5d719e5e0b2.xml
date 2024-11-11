@@ -1,0 +1,37 @@
+<acceptance-test-run title="To validate the Drawings tab" name="To validate the Drawings tab" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="70900" timestamp="2024-08-20T10:44:40.544+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>C10026535</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {ID=C10026535}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="15839">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29216">
+      <description>Then I Enter the C10026535 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14141">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9917">
+      <description>And I verify the Drawing Section for the selected entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1783">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

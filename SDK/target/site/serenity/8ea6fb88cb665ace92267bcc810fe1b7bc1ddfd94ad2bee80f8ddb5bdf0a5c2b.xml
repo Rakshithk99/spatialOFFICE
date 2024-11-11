@@ -1,0 +1,13 @@
+<acceptance-test-run title="To validate the WMTS" name="To validate the WMTS" description="" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15671" timestamp="2024-08-20T11:07:55.324+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="15620">
+    <description>Given I navigate to WMTS tab</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="50">
+    <description>Then I Verify the WMTS Panel</description>
+  </test-step>
+</acceptance-test-run>

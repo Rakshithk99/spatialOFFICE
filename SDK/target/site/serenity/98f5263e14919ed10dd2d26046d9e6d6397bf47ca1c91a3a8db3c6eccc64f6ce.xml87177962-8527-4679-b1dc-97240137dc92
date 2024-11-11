@@ -1,0 +1,13 @@
+<acceptance-test-run title="To validate the LogOut icon" name="To validate the LogOut icon" description="" steps="1" successful="0" failures="0" errors="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="76" timestamp="2024-08-15T11:38:16.910+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <test-step result="ERROR" duration="70">
+    <description>Given I Log out</description>
+    <error>java.lang.reflect.InvocationTargetException</error>
+    <exception>java.lang.reflect.InvocationTargetException:null&#xd;
+[java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method), java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62), java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)]</exception>
+  </test-step>
+</acceptance-test-run>

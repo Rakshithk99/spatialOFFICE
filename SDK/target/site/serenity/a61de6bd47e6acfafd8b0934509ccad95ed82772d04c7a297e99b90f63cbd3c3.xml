@@ -1,0 +1,51 @@
+<acceptance-test-run title="To validate the Splice Report from Reports Dropdown" name="To validate the Splice Report from Reports Dropdown" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="158209" timestamp="2024-08-20T06:58:30.165+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+        <value>SC10014711</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO, ID=SC10014711}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3198">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31236">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15950">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="267">
+      <description>Then I Click on the reports dropdown</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29637">
+      <description>Then I Enter the SC10014711 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14396">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="20331">
+      <description>Then I Navigate to Splice Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="40931">
+      <description>And I validate the Splice Report Panel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2257">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

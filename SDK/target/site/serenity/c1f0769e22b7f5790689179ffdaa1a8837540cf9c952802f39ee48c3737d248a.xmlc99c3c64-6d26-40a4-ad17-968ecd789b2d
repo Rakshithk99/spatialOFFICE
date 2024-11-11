@@ -1,0 +1,40 @@
+<acceptance-test-run title="To test the Login functionality of SDK" name="To test the Login functionality of SDK" description="" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="33535" timestamp="2024-08-06T11:52:36.267+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="1" name="" description=""/>
+      <dataset startRow="1" rowCount="1" name="" description=""/>
+      <dataset startRow="2" rowCount="1" name="" description=""/>
+      <dataset startRow="3" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2715">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30816">
+      <description>When I enter the Credentials</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

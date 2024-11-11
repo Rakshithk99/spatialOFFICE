@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"To Validate the Sanity Tests for SDK Application","To Create the KML Layer and validate the layer is created","ERROR","2024-08-20T10:36:07.414+10:00","0.0","60.18"
+"To Validate the Sanity Tests for SDK Application","To Validate the Circuit Reserve Tag","ERROR","2024-08-20T11:14:27.598+10:00","0.0","87.34"
+"To Validate the Sanity Tests for SDK Application","To Validate the SpatialFilter","ERROR","2024-08-20T11:11:55.536+10:00","0.0","117.92"
+"To Validate the Sanity Tests for SDK Application","To Validate the Splicing","ERROR","2024-08-20T10:53:11.358+10:00","0.0","118.58"
+"To Validate the Sanity Tests for SDK Application","To Validate the Trace from Main Menu","ERROR","2024-08-20T10:45:51.532+10:00","0.0","164.28"

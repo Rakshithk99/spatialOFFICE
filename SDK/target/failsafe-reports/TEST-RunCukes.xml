@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RunCukes" time="2,686.344" tests="206" errors="18" skipped="5" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @Smoke"/>
+    <property name="java.vm.version" value="11.0.22+7-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\temp\apache-maven-3.6.0\bin"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\temp\apache-maven-3.6.0\bin"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.22+7-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MELAZU~1.SPA\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="c:\temp\apache-maven-3.6.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin;C:\Program Files\Amazon Corretto\jdk11.0.22_7;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Oracle\product\12.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Users\mel.azure.build.SPATIALNETWORX\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin;;."/>
+    <property name="maven.conf" value="c:\temp\apache-maven-3.6.0\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="c:\temp\apache-maven-3.6.0\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\mel.azure.build.SPATIALNETWORX"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="mel.azure.build@synchronoss.com"/>
+    <property name="java.class.path" value="c:\temp\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @Smoke verify"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="maven.home" value="c:\temp\apache-maven-3.6.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Corretto-11.0.22.7.1"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0.002"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Then I Enter the SC10018205 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Then I Enter the SC10018205 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Then I create the Splice Connection Report with SC10018205 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0.001"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | SC10018205 |" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0.903"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | SC10018205 |" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0.064"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="Then I Enter the PS744733 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="And I create the Rf Power Trace Diagram Report with PS744733,123456 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" classname="| http://10.246.4.94/SHAW90_SO | PS744733 | 123456 |" time="0.092"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="Then I Enter the 83067748 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="And I create the Equipment Report with 83067748,FiberSpliceCase,FiberSplice and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" classname="| http://10.246.4.94/SHAW90_SO | 83067748 | FiberSpliceCase,FiberSplice |" time="0.054"/>
+  <testcase name="Then I Select the Fiber Splice Node" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="And I create the Splice Tray Report with SC10018205 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | SC10018205 |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="Then I Enter the PLEC13145134 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="And I create the Trace Report with  PLEC13145134,5,10,543 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145134 | 5 | 10 | 543 |" time="0.086"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="Then I Enter the PLEC13145137 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="And I create the Trace Schematic Report with PLEC13145137,6,12,543 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145137 | 6 | 12 | 543 |" time="0.102"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Then I Enter the PLEC13145144 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Then I create the Trace Summary Report with PLEC13145144,8,13,543 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 8 | 13 | 543 |" time="0.105"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Then I Enter the R2678483190 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Then I create the Blown Fiber Schematic Report with &lt;FiberCableID&gt;,8,13,543 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" classname="| http://10.246.4.94/SHAW90_SO | R2678483190 | 8 | 13 | 543 |" time="0.089"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Then I Enter the 32267853 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Then I Enter the 32267853 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Then I create the Boundary Address Report with 32267853,543 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0.091"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0.102"/>
+  <testcase name="Then I create the Home Passed Report with 32267853,543 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | 32267853 | 543 |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0.001"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="Then I Enter the PLEC13145144 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="Then I create the Class Diagram Report with &lt;Entity&gt; and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 |" time="0.099"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="Then I Enter the PLEC13145144 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="Then I create the Query Report with Id,ShortEntityDescription and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | Id | ShortEntityDescription |" time="0.106"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="Then I Enter the PLEC13145144 for the Entity" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="When I validate the Title of the Entity Selected" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="Given I validate Report Manager Section" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="Then I Click on Create Report" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="Then I create the OTDR Report with 10,12,678 and verify the Report created in the Report Manager Dashboard" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="Given I Log out" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" classname="| http://10.246.4.94/SHAW90_SO | PLEC13145144 | 10 | 12 | 678 |" time="0.106"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0.001"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="Given I launch http://10.246.4.94/SHAW90_SO the Application" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="When I enter the Credentials" classname="| http://10.246.4.94/SHAW90_SO |" time="0"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.088"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.149"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.058"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.108"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.065"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.061"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.068"/>
+  <testcase name="| http://10.246.4.94/SHAW90_SO |" classname="| http://10.246.4.94/SHAW90_SO |" time="0.093"/>
+  <testcase name="Given I Verify the Ruler is displayed and clickable" classname="Scenario: To Validate the Ruler" time="0"/>
+  <testcase name="And I Verify the Distance option of Ruler" classname="Scenario: To Validate the Ruler" time="0.011">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-dialog&quot;)]/sncr-map-measure/button/span[1]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.04 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 7717518c18ac1af7b19488f5d7beda46&#10;*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-dialog&quot;)]/sncr-map-measure/button/span[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-dialog")]/sncr-map-measure/button/span[1]"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 7717518c18ac1af7b19488f5d7beda46
+*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-dialog")]/sncr-map-measure/button/span[1]}
+</error>
+  </testcase>
+  <testcase name="Scenario: To Validate the Ruler" classname="Scenario: To Validate the Ruler" time="0.011">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-dialog&quot;)]/sncr-map-measure/button/span[1]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.04 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 7717518c18ac1af7b19488f5d7beda46&#10;*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-dialog&quot;)]/sncr-map-measure/button/span[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-dialog")]/sncr-map-measure/button/span[1]"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 7717518c18ac1af7b19488f5d7beda46
+*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-dialog")]/sncr-map-measure/button/span[1]}
+</error>
+  </testcase>
+  <testcase name="Then I Verify the Area option of Red line Ruler" classname="Scenario: To Validate the Ruler" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given I Verify the Go to Location is displayed and clickable" classname="Scenario: To Validate the Go to Location" time="0"/>
+  <testcase name="Then I Verify the Pop up enables for Go To Location" classname="Scenario: To Validate the Go to Location" time="0.002">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 7717518c18ac1af7b19488f5d7beda46&#10;*** Element info: {Using=xpath, value=//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 7717518c18ac1af7b19488f5d7beda46
+*** Element info: {Using=xpath, value=//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon}
+</error>
+  </testcase>
+  <testcase name="Scenario: To Validate the Go to Location" classname="Scenario: To Validate the Go to Location" time="0.009">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 7717518c18ac1af7b19488f5d7beda46&#10;*** Element info: {Using=xpath, value=//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56173}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12464_1542225502}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 7717518c18ac1af7b19488f5d7beda46
+*** Element info: {Using=xpath, value=//sncr-map-center-location//form//div[1]/div[1]/button/span[1]/mat-icon}
+</error>
+  </testcase>
+  <testcase name="Given I verify the Share is displayed and clickable" classname="Scenario: To Validate the Share" time="0"/>
+  <testcase name="When I Verify the Copy Lat &amp; Long as URL" classname="Scenario: To Validate the Share" time="0.004">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 76c52c699513c3d506c81e2f3d775e64&#10;*** Element info: {Using=xpath, value=//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 76c52c699513c3d506c81e2f3d775e64
+*** Element info: {Using=xpath, value=//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button}
+</error>
+  </testcase>
+  <testcase name="Scenario: To Validate the Share" classname="Scenario: To Validate the Share" time="0.004">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.06 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 76c52c699513c3d506c81e2f3d775e64&#10;*** Element info: {Using=xpath, value=//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 76c52c699513c3d506c81e2f3d775e64
+*** Element info: {Using=xpath, value=//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button}
+</error>
+  </testcase>
+  <testcase name="Then I Verify the Copy Features as URL" classname="Scenario: To Validate the Share" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given I Validate the Clear control option" classname="Scenario: To Validate the Clear Option" time="0.001">
+    <error message="element click intercepted: Element &lt;button title=&quot;Clear Controls&quot; class=&quot;fas fa-times&quot; style=&quot;font-size: 1.5em;&quot;&gt;&lt;/button&gt; is not clickable at point (549, 112). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.12 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 76c52c699513c3d506c81e2f3d775e64" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <button title="Clear Controls" class="fas fa-times" style="font-size: 1.5em;"></button> is not clickable at point (549, 112). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.12 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 76c52c699513c3d506c81e2f3d775e64
+]]></error>
+    <system-out><![CDATA[
+  Scenario: To Validate the Share                       # src/main/resources/features/Smoke.feature:201
+    Given I verify the Share is displayed and clickable # HomePageDefinition.iVerifyTheShareIsDisplayedAndClickable()
+    When I Verify the Copy Lat & Long as URL            # HomePageDefinition.iVerifyTheCopyLatLongAsURL()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button"}
+        (Session info: chrome=127.0.6533.120)
+        (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 20.06 seconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+      Session ID: 76c52c699513c3d506c81e2f3d775e64
+      *** Element info: {Using=xpath, value=//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy27.click(Unknown Source)
+      	at stepPage.HomePage.HomePage.clickToolElement(HomePage.java:948)
+      	at stepImplementation.HomePage.HomePageImplementation.verifyLatLongCopy(HomePageImplementation.java:1486)
+      	at stepDefinition.HomePage.HomePageDefinition.iVerifyTheCopyLatLongAsURL(HomePageDefinition.java:513)
+      	at ?.When I Verify the Copy Lat & Long as URL(src/main/resources/features/Smoke.feature:203)
+
+    Then I Verify the Copy Features as URL              # HomePageDefinition.iVerifyTheCopyFeaturesAsURL()
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: To Validate the Share
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP When I Verify the Copy Lat & Long as URL
+[main] ERROR net.serenitybdd.core.Serenity - no such element: Unable to locate element: {"method":"xpath","selector":"//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button"}  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 20.06 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: 76c52c699513c3d506c81e2f3d775e64*** Element info: {Using=xpath, value=//mat-dialog-container/sncr-error-dialog/mat-dialog-actions/button}For documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown
+[main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: To Validate the Clear Option
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: To Validate the Clear Option" classname="Scenario: To Validate the Clear Option" time="0.002">
+    <error message="element click intercepted: Element &lt;button title=&quot;Clear Controls&quot; class=&quot;fas fa-times&quot; style=&quot;font-size: 1.5em;&quot;&gt;&lt;/button&gt; is not clickable at point (549, 112). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.12 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 76c52c699513c3d506c81e2f3d775e64" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <button title="Clear Controls" class="fas fa-times" style="font-size: 1.5em;"></button> is not clickable at point (549, 112). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.12 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 76c52c699513c3d506c81e2f3d775e64
+]]></error>
+  </testcase>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0.001">
+    <error message="element click intercepted: Element &lt;a _ngcontent-ng-c2408375086=&quot;&quot; mattooltipclass=&quot;header-icon-tooltip&quot; class=&quot;mat-mdc-tooltip-trigger toolbar-button ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-ng-1-15&quot; cdk-describedby-host=&quot;ng-1&quot;&gt;...&lt;/a&gt; is not clickable at point (984, 44). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.13 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 76c52c699513c3d506c81e2f3d775e64" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <a _ngcontent-ng-c2408375086="" mattooltipclass="header-icon-tooltip" class="mat-mdc-tooltip-trigger toolbar-button ng-star-inserted" aria-describedby="cdk-describedby-message-ng-1-15" cdk-describedby-host="ng-1">...</a> is not clickable at point (984, 44). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.13 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 76c52c699513c3d506c81e2f3d775e64
+]]></error>
+    <system-out><![CDATA[
+  Scenario: To Validate the Clear Option      # src/main/resources/features/Smoke.feature:206
+    Given I Validate the Clear control option # HomePageDefinition.iValidateTheClearControlOption()
+      org.openqa.selenium.WebDriverException: element click intercepted: Element <button title="Clear Controls" class="fas fa-times" style="font-size: 1.5em;"></button> is not clickable at point (549, 112). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+        (Session info: chrome=127.0.6533.120)
+        (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 1.12 seconds
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+      Session ID: 76c52c699513c3d506c81e2f3d775e64
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+      	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+      	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+      	at com.sun.proxy.$Proxy27.click(Unknown Source)
+      	at stepPage.HomePage.HomePage.clickToolElement(HomePage.java:948)
+      	at stepImplementation.HomePage.HomePageImplementation.verifyClearControl(HomePageImplementation.java:1518)
+      	at stepDefinition.HomePage.HomePageDefinition.iValidateTheClearControlOption(HomePageDefinition.java:528)
+      	at ?.Given I Validate the Clear control option(src/main/resources/features/Smoke.feature:207)
+
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: To Validate the Clear Option
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Given I Validate the Clear control option
+[main] ERROR net.serenitybdd.core.Serenity - element click intercepted: Element <button title="Clear Controls" class="fas fa-times" style="font-size: 1.5em;"></button> is not clickable at point (549, 112). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 1.12 secondsBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: 76c52c699513c3d506c81e2f3d775e64Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown
+[main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: To validate the LogOut icon
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0"/>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0"/>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0"/>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0"/>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0.001">
+    <error message="element click intercepted: Element &lt;a _ngcontent-ng-c2408375086=&quot;&quot; mattooltipclass=&quot;header-icon-tooltip&quot; class=&quot;mat-mdc-tooltip-trigger toolbar-button ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-ng-1-58&quot; cdk-describedby-host=&quot;ng-1&quot;&gt;...&lt;/a&gt; is not clickable at point (984, 44). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.61 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 5ef674a0bf69979bc95df39fc9e52444" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <a _ngcontent-ng-c2408375086="" mattooltipclass="header-icon-tooltip" class="mat-mdc-tooltip-trigger toolbar-button ng-star-inserted" aria-describedby="cdk-describedby-message-ng-1-58" cdk-describedby-host="ng-1">...</a> is not clickable at point (984, 44). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.61 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5ef674a0bf69979bc95df39fc9e52444
+]]></error>
+    <system-out><![CDATA[
+  Scenario: Validating Theming for Graduated(Range) # src/main/resources/features/Smoke.feature:303
+    Given I Navigate to Theming                     # HomePageDefinition.iNavigateToTheming()
+    Then I Click on Add Theme                       # HomePageDefinition.iClickOnAddTheme()
+    And I Navigate to Graduated Range               # HomePageDefinition.iNavigateToGraduatedRange()
+    Then I enter the details for Graduated Range    # HomePageDefinition.iEnterDetailsForGraduatedRange()
+    And I Click on the Color Bar to select a Color  # HomePageDefinition.iClickOnTheColorBar()
+    And I Add Min Max and Steps for Graduated Range # HomePageDefinition.addMinMaxStepsForGraduatedRange()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button"}
+        (Session info: chrome=127.0.6533.120)
+        (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 20.19 seconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+      Session ID: 5ef674a0bf69979bc95df39fc9e52444
+      *** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy27.click(Unknown Source)
+      	at stepPage.HomePage.HomePage.clickToolElement(HomePage.java:948)
+      	at stepImplementation.HomePage.HomePageImplementation.AddMinMax(HomePageImplementation.java:2055)
+      	at stepDefinition.HomePage.HomePageDefinition.addMinMaxStepsForGraduatedRange(HomePageDefinition.java:731)
+      	at ?.And I Add Min Max and Steps for Graduated Range(src/main/resources/features/Smoke.feature:309)
+
+    Then I Save the Theme                           # HomePageDefinition.iSaveTheTheme()
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Validating Theming for Graduated(Range)
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP And I Add Min Max and Steps for Graduated Range
+[main] ERROR net.serenitybdd.core.Serenity - no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button"}  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 20.19 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: 5ef674a0bf69979bc95df39fc9e52444*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button}For documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown
+[main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: To validate the LogOut icon
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Given I Log out" classname="Scenario: To validate the LogOut icon" time="0.001">
+    <error message="element click intercepted: Element &lt;a _ngcontent-ng-c2408375086=&quot;&quot; mattooltipclass=&quot;header-icon-tooltip&quot; class=&quot;mat-mdc-tooltip-trigger toolbar-button ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-ng-1-58&quot; cdk-describedby-host=&quot;ng-1&quot;&gt;...&lt;/a&gt; is not clickable at point (984, 44). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.65 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: fe8306de2045f11b52a4f245550eaf34" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <a _ngcontent-ng-c2408375086="" mattooltipclass="header-icon-tooltip" class="mat-mdc-tooltip-trigger toolbar-button ng-star-inserted" aria-describedby="cdk-describedby-message-ng-1-58" cdk-describedby-host="ng-1">...</a> is not clickable at point (984, 44). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.65 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: fe8306de2045f11b52a4f245550eaf34
+]]></error>
+    <system-out><![CDATA[
+  Scenario: Validating Theming for Rules # src/main/resources/features/Smoke.feature:323
+    Given I Navigate to Theming          # HomePageDefinition.iNavigateToTheming()
+    Then I Click on Add Theme            # HomePageDefinition.iClickOnAddTheme()
+    And I Navigate to Rules              # HomePageDefinition.iNavigateToRules()
+    Then I enter the details for Rules   # HomePageDefinition.iEnterTheDetailsForRules()
+    And I Click on Add Rule              # HomePageDefinition.iClickOnAddRule()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]"}
+        (Session info: chrome=127.0.6533.120)
+        (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 20.10 seconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+      Session ID: fe8306de2045f11b52a4f245550eaf34
+      *** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]}
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy27.getWrappedElement(Unknown Source)
+      	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:49)
+      	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+      	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+      	at com.google.common.collect.Iterators.addAll(Iterators.java:362)
+      	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
+      	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+      	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:572)
+      	at stepImplementation.HomePage.HomePageImplementation.ClickAddRule(HomePageImplementation.java:2001)
+      	at stepDefinition.HomePage.HomePageDefinition.iClickOnAddRule(HomePageDefinition.java:721)
+      	at ?.And I Click on Add Rule(src/main/resources/features/Smoke.feature:328)
+
+    And I Add a Rule                     # HomePageDefinition.iAddARule()
+    Then I Save the Theme                # HomePageDefinition.iSaveTheTheme()
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Validating Theming for Rules
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP And I Click on Add Rule
+[main] ERROR net.serenitybdd.core.Serenity - no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]"}  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 20.10 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: fe8306de2045f11b52a4f245550eaf34*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]}For documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown
+[main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: To validate the LogOut icon
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.002">
+    <error message="element click intercepted: Element &lt;a _ngcontent-ng-c2408375086=&quot;&quot; mattooltipclass=&quot;header-icon-tooltip&quot; class=&quot;mat-mdc-tooltip-trigger toolbar-button ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-ng-1-15&quot; cdk-describedby-host=&quot;ng-1&quot;&gt;...&lt;/a&gt; is not clickable at point (984, 44). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.13 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 76c52c699513c3d506c81e2f3d775e64" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <a _ngcontent-ng-c2408375086="" mattooltipclass="header-icon-tooltip" class="mat-mdc-tooltip-trigger toolbar-button ng-star-inserted" aria-describedby="cdk-describedby-message-ng-1-15" cdk-describedby-host="ng-1">...</a> is not clickable at point (984, 44). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.13 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56217}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir12412_1425028289}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 76c52c699513c3d506c81e2f3d775e64
+]]></error>
+  </testcase>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.177"/>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.066"/>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.056"/>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.078"/>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.001">
+    <error message="element click intercepted: Element &lt;a _ngcontent-ng-c2408375086=&quot;&quot; mattooltipclass=&quot;header-icon-tooltip&quot; class=&quot;mat-mdc-tooltip-trigger toolbar-button ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-ng-1-58&quot; cdk-describedby-host=&quot;ng-1&quot;&gt;...&lt;/a&gt; is not clickable at point (984, 44). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.61 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 5ef674a0bf69979bc95df39fc9e52444" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <a _ngcontent-ng-c2408375086="" mattooltipclass="header-icon-tooltip" class="mat-mdc-tooltip-trigger toolbar-button ng-star-inserted" aria-describedby="cdk-describedby-message-ng-1-58" cdk-describedby-host="ng-1">...</a> is not clickable at point (984, 44). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.61 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5ef674a0bf69979bc95df39fc9e52444
+]]></error>
+  </testcase>
+  <testcase name="Scenario: To validate the LogOut icon" classname="Scenario: To validate the LogOut icon" time="0.002">
+    <error message="element click intercepted: Element &lt;a _ngcontent-ng-c2408375086=&quot;&quot; mattooltipclass=&quot;header-icon-tooltip&quot; class=&quot;mat-mdc-tooltip-trigger toolbar-button ng-star-inserted&quot; aria-describedby=&quot;cdk-describedby-message-ng-1-58&quot; cdk-describedby-host=&quot;ng-1&quot;&gt;...&lt;/a&gt; is not clickable at point (984, 44). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 1.65 seconds&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: fe8306de2045f11b52a4f245550eaf34" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+element click intercepted: Element <a _ngcontent-ng-c2408375086="" mattooltipclass="header-icon-tooltip" class="mat-mdc-tooltip-trigger toolbar-button ng-star-inserted" aria-describedby="cdk-describedby-message-ng-1-58" cdk-describedby-host="ng-1">...</a> is not clickable at point (984, 44). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.65 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: fe8306de2045f11b52a4f245550eaf34
+]]></error>
+  </testcase>
+  <testcase name="Given I Validate the Previous View" classname="Scenario: To Validate the Previous View and Next View" time="0"/>
+  <testcase name="Then I Validate the Next View" classname="Scenario: To Validate the Previous View and Next View" time="0"/>
+  <testcase name="Scenario: To Validate the Previous View and Next View" classname="Scenario: To Validate the Previous View and Next View" time="0.149"/>
+  <testcase name="When I Enter the PLEC13144915 for the Entity" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="Then I validate the Title of the Entity Selected" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="Given I validate the Jobs Tab" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="Then I Search for the Master Circuit in the Search Box and select the job" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="Then I navigate to Trace tab and select one of the trace" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="And I Click on the Master Circuit Button" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="Then I Validate the Master Circuit Panel and Create a Master Circuit" classname="| PLEC13144915 | Master Circuit |" time="0"/>
+  <testcase name="| PLEC13144915 | Master Circuit |" classname="| PLEC13144915 | Master Circuit |" time="0.053"/>
+  <testcase name="When I Enter the 652 Yates St, Victoria, BC V8W 1L3, Canada for the Entity" classname="| 652 Yates St, Victoria, BC V8W 1L3, Canada |" time="0"/>
+  <testcase name="Then I validate the Title of the Entity Selected for OSM and Google Place" classname="| 652 Yates St, Victoria, BC V8W 1L3, Canada |" time="0"/>
+  <testcase name="| 652 Yates St, Victoria, BC V8W 1L3, Canada |" classname="| 652 Yates St, Victoria, BC V8W 1L3, Canada |" time="0.241"/>
+  <testcase name="Given I Navigate to Theming" classname="Scenario: Validating Theming for Graduated" time="0"/>
+  <testcase name="Then I Click on Add Theme" classname="Scenario: Validating Theming for Graduated" time="0"/>
+  <testcase name="And I Navigate to Graduated" classname="Scenario: Validating Theming for Graduated" time="0"/>
+  <testcase name="Then I enter the details for Graduated" classname="Scenario: Validating Theming for Graduated" time="0"/>
+  <testcase name="And I Click on the Color Bar to select a Color" classname="Scenario: Validating Theming for Graduated" time="0"/>
+  <testcase name="Then I Save the Theme" classname="Scenario: Validating Theming for Graduated" time="0"/>
+  <testcase name="Scenario: Validating Theming for Graduated" classname="Scenario: Validating Theming for Graduated" time="0.134"/>
+  <testcase name="Given I Navigate to Theming(Scenario: Validating Theming for Graduated" classname="Given I Navigate to Theming(Scenario: Validating Theming for Graduated(Range))" time="0"/>
+  <testcase name="Then I Click on Add Theme(Scenario: Validating Theming for Graduated" classname="Then I Click on Add Theme(Scenario: Validating Theming for Graduated(Range))" time="0"/>
+  <testcase name="And I Navigate to Graduated Range(Scenario: Validating Theming for Graduated" classname="And I Navigate to Graduated Range(Scenario: Validating Theming for Graduated(Range))" time="0"/>
+  <testcase name="Then I enter the details for Graduated Range(Scenario: Validating Theming for Graduated" classname="Then I enter the details for Graduated Range(Scenario: Validating Theming for Graduated(Range))" time="0"/>
+  <testcase name="And I Click on the Color Bar to select a Color(Scenario: Validating Theming for Graduated" classname="And I Click on the Color Bar to select a Color(Scenario: Validating Theming for Graduated(Range))" time="0"/>
+  <testcase name="And I Add Min Max and Steps for Graduated Range(Scenario: Validating Theming for Graduated" classname="And I Add Min Max and Steps for Graduated Range(Scenario: Validating Theming for Graduated(Range))" time="0.001">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.19 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 5ef674a0bf69979bc95df39fc9e52444&#10;*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5ef674a0bf69979bc95df39fc9e52444
+*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button}
+</error>
+  </testcase>
+  <testcase name="Scenario: Validating Theming for Graduated" classname="Range" time="0.006">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.19 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: 5ef674a0bf69979bc95df39fc9e52444&#10;*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5ef674a0bf69979bc95df39fc9e52444
+*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div[2]/button}
+</error>
+  </testcase>
+  <testcase name="Then I Save the Theme(Scenario: Validating Theming for Graduated" classname="Then I Save the Theme(Scenario: Validating Theming for Graduated(Range))" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given I Navigate to Theming" classname="Scenario: Validating Theming for Rules" time="0"/>
+  <testcase name="Then I Click on Add Theme" classname="Scenario: Validating Theming for Rules" time="0"/>
+  <testcase name="And I Navigate to Rules" classname="Scenario: Validating Theming for Rules" time="0"/>
+  <testcase name="Then I enter the details for Rules" classname="Scenario: Validating Theming for Rules" time="0"/>
+  <testcase name="And I Click on Add Rule" classname="Scenario: Validating Theming for Rules" time="0.001">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div/button/span[1]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.10 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: fe8306de2045f11b52a4f245550eaf34&#10;*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div/button/span[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: fe8306de2045f11b52a4f245550eaf34
+*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]}
+</error>
+  </testcase>
+  <testcase name="Scenario: Validating Theming for Rules" classname="Scenario: Validating Theming for Rules" time="0.002">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div/button/span[1]&quot;}&#10;  (Session info: chrome=127.0.6533.120)&#10;  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.10 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;&#10;System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]&#10;Session ID: fe8306de2045f11b52a4f245550eaf34&#10;*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div/button/span[1]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]"}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56495}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir8492_1177111911}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: fe8306de2045f11b52a4f245550eaf34
+*** Element info: {Using=xpath, value=//*[starts-with(@id,"mat-tab-content")]/div/div/button/span[1]}
+</error>
+  </testcase>
+  <testcase name="And I Add a Rule" classname="Scenario: Validating Theming for Rules" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then I Save the Theme" classname="Scenario: Validating Theming for Rules" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

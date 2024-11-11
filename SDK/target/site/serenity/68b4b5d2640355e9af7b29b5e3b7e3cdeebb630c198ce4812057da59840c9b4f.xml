@@ -1,0 +1,55 @@
+<acceptance-test-run title="To Validate the MAIN MenuBar Content" name="To Validate the MAIN MenuBar Content" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="202974" timestamp="2024-08-20T10:30:13.769+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3559">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30820">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15879">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="17088">
+      <description>And I verify the Drawing Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15160">
+      <description>When I validate Trace Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15285">
+      <description>Then I validate Rf Power Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15614">
+      <description>Then I validate Rf Levels Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21078">
+      <description>Then I validate Splicing Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="55047">
+      <description>And I validate Reports Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11132">
+      <description>And I validate Report Manager Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2178">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

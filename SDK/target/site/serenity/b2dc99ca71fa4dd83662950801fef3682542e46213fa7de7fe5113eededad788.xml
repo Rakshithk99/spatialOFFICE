@@ -1,0 +1,51 @@
+<acceptance-test-run title="To validate the Home Passed Report from Reports Dropdown" name="To validate the Home Passed Report from Reports Dropdown" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="138376" timestamp="2024-08-20T11:04:22.522+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+        <value>593011783</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO, ID=593011783}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2774">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30898">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15855">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="224">
+      <description>Then I Click on the reports dropdown</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29185">
+      <description>Then I Enter the 593011783 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14194">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="25799">
+      <description>Given I Navigate to Home Passed Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="17426">
+      <description>And I validate the Home Passed Report Panel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2017">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

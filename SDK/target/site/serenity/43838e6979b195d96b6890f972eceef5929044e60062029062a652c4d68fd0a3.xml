@@ -1,0 +1,31 @@
+<acceptance-test-run title="To Validate the SpatialOffice with the URl to search with address" name="To Validate the SpatialOffice with the URl to search with address" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="65291" timestamp="2024-08-20T07:17:29.828+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO/#/map(sidebar:sidebar)?selectedTab=search&amp;searchText=6764 S River Rd, Marine City, MI 48039, United States</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO/#/map(sidebar:sidebar)?selectedTab=search&amp;searchText=6764 S River Rd, Marine City, MI 48039, United States}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3401">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO/#/map(sidebar:sidebar)?selectedTab=search&amp;searchText=6764 S River Rd, Marine City, MI 48039, United States the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31554">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30333">
+      <description>Then I take the screenshot for the Map</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

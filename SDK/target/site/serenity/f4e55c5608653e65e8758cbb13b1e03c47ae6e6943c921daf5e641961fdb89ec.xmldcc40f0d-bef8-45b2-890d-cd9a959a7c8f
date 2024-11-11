@@ -1,0 +1,13 @@
+<acceptance-test-run title="To validate the LogOut icon" name="To validate the LogOut icon" description="" steps="1" successful="0" failures="0" errors="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="43" timestamp="2024-08-14T20:31:15.024+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <test-step result="ERROR" duration="17">
+    <description>Given I Log out</description>
+    <error>java.lang.reflect.InvocationTargetException</error>
+    <exception>java.lang.reflect.InvocationTargetException:null&#xd;
+[jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source), java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)]</exception>
+  </test-step>
+</acceptance-test-run>

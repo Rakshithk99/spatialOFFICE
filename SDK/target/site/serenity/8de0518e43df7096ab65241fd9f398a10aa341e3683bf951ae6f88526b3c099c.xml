@@ -1,0 +1,54 @@
+<acceptance-test-run title="To Validate the Trace Report from Report Manager" name="To Validate the Trace Report from Report Manager" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="148511" timestamp="2024-08-20T07:28:05.157+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>FiberCableID</header>
+      <header>PhysicalSeq</header>
+      <header>Channel</header>
+      <header>JobID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+        <value>PLEC13145134</value>
+        <value>5</value>
+        <value>10</value>
+        <value>543</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO, FiberCableID=PLEC13145134, PhysicalSeq=5, Channel=10, JobID=543}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3514">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31744">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30114">
+      <description>Then I Enter the PLEC13145134 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14469">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9804">
+      <description>Given I validate Report Manager Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21674">
+      <description>Then I Click on Create Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="34669">
+      <description>And I create the Trace Report with  PLEC13145134,5,10,543 and verify the Report created in the Report Manager Dashboard</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2516">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

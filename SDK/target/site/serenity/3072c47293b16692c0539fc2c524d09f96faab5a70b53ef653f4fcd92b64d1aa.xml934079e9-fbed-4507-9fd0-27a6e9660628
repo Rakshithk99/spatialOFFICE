@@ -1,0 +1,35 @@
+<acceptance-test-run title="To test the Login functionality of SDK" name="To test the Login functionality of SDK" description="" steps="2" successful="0" failures="0" errors="1" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="27645" timestamp="2024-08-19T08:08:04.638+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="1" name="" description=""/>
+      <dataset startRow="1" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+      </row>
+      <row result="ERROR">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO}" result="ERROR">
+    <test-step result="ERROR" duration="27632">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+      <error>java.lang.IllegalStateException: The process has not exited yet therefore no result is available ...</error>
+      <exception>java.lang.IllegalStateException:The process has not exited yet therefore no result is available ...&#xd;
+[org.apache.commons.exec.DefaultExecuteResultHandler.getException(DefaultExecuteResultHandler.java:76), common.BaseTest.setUp(BaseTest.java:74), common.LoginAuthentication.launch(LoginAuthentication.java:15), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method), java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]</exception>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>When I enter the Credentials</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

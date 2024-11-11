@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Reports">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/global/Reports/chromedriver_win32 (3).zip!/" />
+      <root url="jar://$PROJECT_DIR$/global/Reports/chromedriver_win32 (1).zip!/" />
+      <root url="jar://$PROJECT_DIR$/global/Reports/chromedriver_win32 (2).zip!/" />
+      <root url="jar://$PROJECT_DIR$/global/Reports/chromedriver_mac64.zip!/" />
+      <root url="jar://$PROJECT_DIR$/global/Reports/chromedriver_win32.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

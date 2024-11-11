@@ -1,0 +1,34 @@
+<acceptance-test-run title="To validate the Drawings tab" name="To validate the Drawings tab" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="70111" timestamp="2024-08-20T06:45:49.038+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>B10000159</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {ID=B10000159}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="15916">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29874">
+      <description>Then I Enter the B10000159 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14316">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9998">
+      <description>And I verify the Drawing Section for the selected entity</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

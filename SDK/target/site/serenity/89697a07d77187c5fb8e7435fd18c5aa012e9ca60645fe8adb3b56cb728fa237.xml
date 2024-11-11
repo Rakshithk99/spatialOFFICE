@@ -1,0 +1,34 @@
+<acceptance-test-run title="To Validate the Book Mark" name="To Validate the Book Mark" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="58467" timestamp="2024-08-20T07:10:13.986+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>83067748</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {ID=83067748}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="29801">
+      <description>When I Enter the 83067748 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14428">
+      <description>Then I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6326">
+      <description>And I Click on the BookMark</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7909">
+      <description>Then I Add the Selected View as the New Book Mark</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

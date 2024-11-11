@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Serenity Reports</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- jQplot -->
+<!--[if IE]>
+<script language="javascript" type="text/javascript" src="excanvas/3/excanvas.compiled.js"></script>
+<![endif]--><link rel="stylesheet" type="text/css" href="jqplot/1.0.8/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="jqplot/1.0.8/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="jqplot/1.0.8/plugins/jqplot.pieRenderer.min.js"></script>
+
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+        var test_results_plot = $.jqplot('test_results_pie_chart', [
+            [
+                ['Passing', 0.833333],
+                
+                ['Pending', 0],
+                
+                ['Ignored', 0],
+                
+                ['Failing', 0],
+                
+                ['Errors',  0.166667],
+                ['Compromised',  0]
+            ]
+        ], {
+
+            gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
+            seriesColors: ['#30cb23',
+                
+                '#a2f2f2',
+                
+                '#eeeadd',
+                
+                '#f8001f',
+                
+                '#fc6e1f',
+                'fuchsia'],
+            seriesDefaults: {
+                renderer: $.jqplot.PieRenderer,
+                trendline: { show: false },
+                rendererOptions: { padding: 8, showDataLabels: true }
+            },
+            legend: {
+                show: true,
+                placement: 'outside',
+                rendererOptions: {
+                    numberRows: 2
+                },
+                location: 's',
+                marginTop: '15px'
+            },
+            series: [
+                {label: '25 / 30 tests passed' },
+                {label: '0 / 30 tests pending'},
+                {label: '0 / 30 tests not executed'},
+                {label: '0 / 30 tests failed'},
+                {label: '5 / 30 errors'},
+                {label: '0 / 30 compromised tests'}
+            ]
+        });
+
+        var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
+            [
+                ['Passing', 0.78392],
+                
+                ['Pending', 0],
+                
+                ['Ignored', 0],
+                
+                ['Failing', 0],
+                
+                ['Errors', 0.21608],
+                ['Compromised', 0],
+            ]
+        ], {
+
+            gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
+            seriesColors: ['#30cb23',
+                
+                '#a2f2f2',
+                
+                '#eeeadd',
+                
+                '#f8001f',
+                
+                '#fc6e1f',
+                'mediumvioletred'],
+
+            seriesDefaults: {
+                renderer: $.jqplot.PieRenderer,
+                trendline: { show: false },
+                rendererOptions: { padding: 8, showDataLabels: true }
+            },
+            legend: {
+                show: true,
+                placement: 'outside',
+                rendererOptions: {
+                    numberRows: 2
+                },
+                location: 's',
+                marginTop: '15px'
+            },
+            series: [
+                {label: '25 / 30 tests passed (0.78392% of all test steps)' },
+                {label: '0 / 30 tests pending'},
+                {label: '0 / 30 tests not executed'},
+                {label: '0 / 30 tests failed (0% of all test steps)'},
+                {label: '5 / 30 errors (0.21608% of all test steps)'}
+            ]
+        });
+
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [
+                [ 1, "asc" ]
+            ],
+            "pageLength": 100,
+            "lengthMenu": [ [50, 100, 200, -1] , [50, 100, 200, "All"] ]
+        });
+
+        // Pie charts
+        $('#test-results-tabs').tabs();
+
+        $('#toggleNormalPieChart').click(function () {
+            $("#test_results_pie_chart").toggle();
+        });
+
+        $('#toggleWeightedPieChart').click(function () {
+            $("#weighted_test_results_pie_chart").toggle();
+        });
+
+
+
+    })
+    ;
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+<div id="contenttop">
+    <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+                > Feature
+                > To Validate The Sanity Tests For Sdk Application
+        </span>
+    </div>
+    <div class="rightbg"></div>
+</div>
+
+<div class="clr"></div>
+
+<!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-08-2024 12:02</span>
+    <br style="clear:left"/>
+</div>
+<div class="clr"></div>
+<div id="beforetable"></div>
+<div id="results-dashboard">
+<div class="middlb">
+<div class="table">
+
+<h2><i class='fa fa-tags'></i> Feature: To Validate The Sanity Tests For Sdk Application</h2>
+<table class='overview'>
+    <tr>
+        <td width="375px" valign="top">
+            <div class="test-count-summary">
+                <span class="test-count-title">30
+                    test scenarios (30 tests in all, including 23
+                    rows of test data)</span>
+                <div>
+
+                <span class="test-count">
+                    25
+                        <a href="18eb39518e77f26df9cf10f479cb623d3ebbfaea3068afe6647d156892557ded.html">passed</a>
+                    ,
+                </span>
+                <span class="test-count">
+                    0
+pending,
+                </span>
+                <span class="test-count">
+                    0
+failed,
+                </span>
+                <span class="test-count">
+                    5
+                        <a href="70cf38b4a68a08b98eeedd1b21ff34ba9c013c0c82e6d2e645a3efeb61a01c4a.html">with errors</a>
+                    ,
+                </span>
+                <span class="test-count">
+                    0
+compromised,
+                </span>
+                <span class="test-count">
+                    0
+ignored,
+                </span>
+                <span class="test-count">
+                    0
+skipped
+                </span>
+                    <a href="4b63c05aaeb4cdd1cdb5aedee340c42cfe56970824b262270072627185893b94.csv">[CSV]</a>
+                </div>
+            </div>
+
+            <div id="test-results-tabs">
+                <ul>
+                    <li><a href="#test-results-tabs-1">Test Count</a></li>
+                    <li><a href="#test-results-tabs-2">Weighted Tests</a></li>
+                </ul>
+                <div id="test-results-tabs-1">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <span class="caption">Total number of tests that pass, fail, or are pending.</span>
+                                <span class="togglePieChart" id="toggleNormalPieChart"><a href="#">Show/Hide Pie Chart</a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: text-top;">
+                                <div id="test_results_pie_chart"></div>
+                            </td>
+                            <td class="related-tags-section">
+                                <div>
+
+
+
+
+
+<div>
+    <h4>Test Result Summary</h4>
+    <table class="summary-table">
+        <head>
+            <tr>
+                <th>Test Type</th>
+                <th>Total</th>
+                <th>Pass&nbsp;<i class="icon-check"/> </th>
+                <th>Fail&nbsp;<i class="icon-thumbs-down"/></th>
+                <th>Pending&nbsp;<i class="icon-calendar"/></th>
+                <th>Ignored&nbsp;<i class="icon-ban-circle"/></th>
+            </tr>
+        </head>
+        <body>
+        <tr>
+            <td class="summary-leading-column">Automated</td>
+            <td>30</td>
+            <td>25 (83%)</td>
+            <td>5 (17%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Manual</td>
+            <td>0</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Total</td>
+            <td>30</td>
+            <td>25 (83%)</td>
+            <td>5 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Total Duration</td>
+                <td colspan="5">48 minutes 14 seconds</td>
+        </tr>
+        </body>
+    </table>
+</div>                                </div>
+                                <div>
+<table class="tags-summary-table">
+    <tr>
+        <td width="300px"><h3>Related Tags</h3></td>
+        <td width="90px" class="tag-count-header">% Passed</td>
+        <td width="130px" class="test-count">&nbsp;</td>
+        <td class="tag-count-header">Test count</td>
+    </tr>
+</table>
+        <table class="test-summary-table">
+            <tr>
+                <td colspan="3">
+                    <div class="tagTypeTitle">Tags
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                    <td class="bluetext" class="tag-title">
+                        <span class="ERROR-text ellipsis">
+                                <a href="0908ce782b97ec3754c60da63c733b8b2aa3d02548b6904043be6a08b4ea5895.html" title="Sanity">Sanity</a>
+                        </span>
+                    </td>
+                    <td width="220px" class="table-figure">
+
+
+                        <table>
+                            <tr>
+                                <td class="related-tag-percentage"><span title="25 out of 30 tests (156 steps) passing">83.3%</span></td>
+                                <td width="150px">
+                                    <a href="0908ce782b97ec3754c60da63c733b8b2aa3d02548b6904043be6a08b4ea5895.html">
+                                        <div class="percentagebar"
+                                             title="0 out of 30 tests (0 steps) pending"
+                                             style="width: 150px;">
+                                            <div class="ignoredbar"
+                                                 style="width: 150px;"
+                                                 title="0 out of 30 tests (0 steps) skipped or ignored">
+                                                <div class="compromisedbar"
+                                                     style="width: 150px;"
+                                                     title="0 out of 30 tests (0 steps) compromised">
+                                                    <div class="errorbar"
+                                                         style="width: 150px;"
+                                                         title="5 out of 30 tests (43 steps) broken">
+                                                        <div class="failingbar"
+                                                             style="width: 125px;"
+                                                             title="0 out of 30 tests (0 steps) failing">
+                                                            <div class="passingbar"
+                                                                 style="width: 125px;"
+                                                                 title="25 out of 30 tests (156 steps) passing">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="related-tag-count"><span class="result-test-count" title="30 tests">30</span></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+        </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="test-results-tabs-2">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <span class="caption">Test results weighted by test size in steps (average steps per test: 6.633333) .</span>
+                                <span class="togglePieChart" id="toggleWeightedPieChart"><a href="#">Show/Hide Pie
+                                    Chart</a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: text-top;">
+                                <div id="weighted_test_results_pie_chart"></div>
+                            </td>
+                            <td class="related-tags-section">
+                                <div>
+
+
+
+
+
+<div>
+    <h4>Test Result Summary</h4>
+    <table class="summary-table">
+        <head>
+            <tr>
+                <th>Test Type</th>
+                <th>Total</th>
+                <th>Pass&nbsp;<i class="icon-check"/> </th>
+                <th>Fail&nbsp;<i class="icon-thumbs-down"/></th>
+                <th>Pending&nbsp;<i class="icon-calendar"/></th>
+                <th>Ignored&nbsp;<i class="icon-ban-circle"/></th>
+            </tr>
+        </head>
+        <body>
+        <tr>
+            <td class="summary-leading-column">Automated</td>
+            <td>30</td>
+            <td>25 (83%)</td>
+            <td>5 (17%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Manual</td>
+            <td>0</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Total</td>
+            <td>30</td>
+            <td>25 (83%)</td>
+            <td>5 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Total Duration</td>
+                <td colspan="5">48 minutes 14 seconds</td>
+        </tr>
+        </body>
+    </table>
+</div>                                </div>
+                                <div>
+<table class="tags-summary-table">
+    <tr>
+        <td width="300px"><h3>Related Tags</h3></td>
+        <td width="90px" class="tag-count-header">% Passed</td>
+        <td width="130px" class="test-count">&nbsp;</td>
+        <td class="tag-count-header">Test count</td>
+    </tr>
+</table>
+        <table class="test-summary-table">
+            <tr>
+                <td colspan="3">
+                    <div class="tagTypeTitle">Tags
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                    <td class="bluetext" class="tag-title">
+                        <span class="ERROR-text ellipsis">
+                                <a href="0908ce782b97ec3754c60da63c733b8b2aa3d02548b6904043be6a08b4ea5895.html" title="Sanity">Sanity</a>
+                        </span>
+                    </td>
+                    <td width="220px" class="table-figure">
+
+
+                        <table>
+                            <tr>
+                                <td class="related-tag-percentage"><span title="25 out of 30 tests (156 steps) passing">78.4%</span></td>
+                                <td width="150px">
+                                    <a href="0908ce782b97ec3754c60da63c733b8b2aa3d02548b6904043be6a08b4ea5895.html">
+                                        <div class="percentagebar"
+                                             title="0 out of 30 tests (0 steps) pending"
+                                             style="width: 150px;">
+                                            <div class="ignoredbar"
+                                                 style="width: 150px;"
+                                                 title="0 out of 30 tests (0 steps) skipped or ignored">
+                                                <div class="compromisedbar"
+                                                     style="width: 150px;"
+                                                     title="0 out of 30 tests (0 steps) compromised">
+                                                    <div class="errorbar"
+                                                         style="width: 150px;"
+                                                         title="5 out of 30 tests (43 steps) broken">
+                                                        <div class="failingbar"
+                                                             style="width: 118px;"
+                                                             title="0 out of 30 tests (0 steps) failing">
+                                                            <div class="passingbar"
+                                                                 style="width: 118px;"
+                                                                 title="25 out of 30 tests (156 steps) passing">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="related-tag-count"><span class="result-test-count" title="30 tests">30</span></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+        </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </td>
+
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <div><h3>Tests</h3></div>
+            <div id="test_list_tests" class="table">
+                <div class="test-results">
+                    <table id="test-results-table">
+                        <thead>
+                        <tr>
+                            <th width="50" class="test-results-heading">&nbsp;</th>
+                            <th width="%" class="test-results-heading">Tests</th>
+                            <th width="70" class="test-results-heading">Steps</th>
+
+                            <th width="100" class="test-results-heading">Duration<br>(seconds)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="34663d856062c063a09b310fdb1b86e3002881691f6a4f1ca402e827e3d014ea.html" class="ellipsis" title="Web driver exception: element click intercepted: Element (button _ngcontent-ng-c1443662716='' mat-flat-button='' type='submit' class='mat-mdc-tooltip-trigger primary-button mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-mdc-button-disabled mat-unthemed mat-mdc-button-base ng-star-inserted' mat-ripple-loader-uninitialized='' mat-ripple-loader-class-name='mat-mdc-button-ripple' mat-ripple-loader-disabled='' disabled='true' aria-describedby='cdk-describedby-message-ng-1-49' cdk-describedby-host='ng-1')...(/button) is not clickable at point (755, 480). Other element would receive the click: (div _ngcontent-ng-c1443662716='' mat-dialog-actions='' class='mat-mdc-dialog-actions mdc-dialog__actions dialog-actions')...(/div)  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 1.06 secondsBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54518}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir14720_227832450}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: 0b090db1c33db6a8675177dd3b7b3685Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown">
+                                    To Create the KML Layer and validate the layer is created 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">60.18</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="39dda189b175abe030eaf96adb38ddf865ed368077a1db76e6a1b118f5af3d84.html" class="ellipsis" title="">
+                                    To Create the KMZ Layer and validate the layer is created 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">78.59</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="c28e2937eeca70d5e92dcda6f4cb85ac09272ae152a0b1b44e56a187a2921544.html" class="ellipsis" title="">
+                                    To Create the XYZ Layer and validate the layer is created 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">65.76</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="eaa41726d622b3444f367ec0393c83f71fd3a22d32dad1b6ae0849ae42f55039.html" class="ellipsis" title="">
+                                    To Validate the Base Layers Tab 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">7</td>
+
+
+                                <td class="lightgreentext">183.65</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="d4a11162fcbca262ec844b4fbb83cb3f5d598a1cecf350cf29d5c709e358630a.html" class="ellipsis" title="">
+                                    To Validate the Book Mark 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">5</td>
+
+
+                                <td class="lightgreentext">57.51</td>
+                            </tr>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="0243ca4fe5e97840de3db99b1a5cbdce307377cd8ff3014a45a12c8bd1de345e.html" class="ellipsis" title="No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//*[@id='circuitListPanel']/div/table/tbody/tr[3]/td[11]/div/button/span[1]/span'}  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 20.04 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55385}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5796_554988046}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: 1b956eef4536910213203a7b09af08ea*** Element info: {Using=xpath, value=//*[@id='circuitListPanel']/div/table/tbody/tr[3]/td[11]/div/button/span[1]/span}For documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown">
+                                    To Validate the Circuit Reserve Tag 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">87.34</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="b60284116d65f8b32c1c0511d120e73c15a155b6be12f03b94dd350e5be1b459.html" class="ellipsis" title="">
+                                    To Validate the Find Table 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">94.74</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="68b4b5d2640355e9af7b29b5e3b7e3cdeebb630c198ce4812057da59840c9b4f.html" class="ellipsis" title="">
+                                    To Validate the MAIN MenuBar Content 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">12</td>
+
+
+                                <td class="lightgreentext">202.97</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="5b4b10448bf56a13df5b6b07d5f3a906f5574e42ca577a1bc33af0559f1a7ec3.html" class="ellipsis" title="">
+                                    To Validate the Red line Creation for Shapes 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">3</td>
+
+
+                                <td class="lightgreentext">132.42</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="657ab44a6f72c2a8fbe039f14404b21cf205718cd3fec0fd2f526e6169f34d9b.html" class="ellipsis" title="">
+                                    To Validate the Red line Creation for Text 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">28.2</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="21f9a41a670aa9831e57cc22dfa705a0434a4110184bbfd9fa6b594591582732.html" class="ellipsis" title="">
+                                    To Validate the Red line Menu 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">5</td>
+
+
+                                <td class="lightgreentext">67.88</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="5e377f9d751ba20abbf23ab4731fee0ac331160905d0f18b32f9b9cbef1e61c8.html" class="ellipsis" title="">
+                                    To Validate the Rf Levels from Main Menu 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">7</td>
+
+
+                                <td class="lightgreentext">90</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="6ae527e98ebda5ef6b15c832345afd290cbb6accebe098e9aaf3a37624e16e45.html" class="ellipsis" title="">
+                                    To Validate the Rf Power from Main Menu 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">141.78</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="444b1b35b2c31301d68634c067849dbca3e26ee143c4e5b5fc1b50dc3c4d48d4.html" class="ellipsis" title="">
+                                    To Validate the Rf power Trace Report 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">43.36</td>
+                            </tr>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="ea6e6224f749f705905f232c34f1021b087833e734dacdf763db878dc78aa36d.html" class="ellipsis" title="Web driver exception: element click intercepted: Element (button _ngcontent-ng-c1919120733='' mat-flat-button='' type='submit' class='primary-button mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed mat-mdc-button-base mat-mdc-button-disabled' mat-ripple-loader-uninitialized='' mat-ripple-loader-class-name='mat-mdc-button-ripple' mat-ripple-loader-disabled='' disabled='true')...(/button) is not clickable at point (753, 473). Other element would receive the click: (div _ngcontent-ng-c1919120733='' mat-dialog-actions='' class='mat-mdc-dialog-actions mdc-dialog__actions dialog-actions')...(/div)  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 1.11 secondsBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55324}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir3236_1468433672}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: 3b097170e8a870a0fee8c19629b73598Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown">
+                                    To Validate the SpatialFilter 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">117.92</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="46956e8c847c1ad05b0ff1f150a5fc2aecbcd27b26dd10cfabe57b4d86b4da7c.html" class="ellipsis" title="">
+                                    To Validate the SpatialOffice with the URl to search with address 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">5</td>
+
+
+                                <td class="lightgreentext">66.33</td>
+                            </tr>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="4863d6bdabbbc252590e33b894379754b45243bf08ac87eda8b4b8d0e455ce81.html" class="ellipsis" title="No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//*[@id='splicing-form-select-leftCircuitOwner']//div[1]/span'}  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 20.07 secondsFor documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54909}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir14260_1996205981}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: d636c953a13ca31203821f40d6d54a6b*** Element info: {Using=xpath, value=//*[@id='splicing-form-select-leftCircuitOwner']//div[1]/span}For documentation on this error, please visit: http://seleniumhq.org/exceptionso_such_element.htmlBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown">
+                                    To Validate the Splicing 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">118.58</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="db1d60e62ec2eae93c506b12a5cb84ace169008203b4e3860df25f53bcc0bc7a.html" class="ellipsis" title="">
+                                    To Validate the ToolBar 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">9</td>
+
+
+                                <td class="lightgreentext">84.13</td>
+                            </tr>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="d6b5c10d9b5ff2094fbcd3fb876ff912b07b196f0eb8aaca49a92b65e25892e0.html" class="ellipsis" title="Web driver exception: element click intercepted: Element (div role='tab' mattablabelwrapper='' cdkmonitorelementfocus='' class='mdc-tab mat-mdc-tab mat-mdc-focus-indicator ng-star-inserted' id='mat-tab-label-1-3' tabindex='-1' aria-posinset='4' aria-setsize='5' aria-controls='mat-tab-content-1-3' aria-selected='false' aria-disabled='false')...(/div) is not clickable at point (581, 351). Other element would receive the click: (span class='mat-mdc-button-touch-target')(/span)  (Session info: chrome=127.0.6533.120)  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 1.10 secondsBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54772}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir17600_655191445}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]Session ID: c27102643cbafb204f1a65788771f618Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'AU-MELOCIQACL3', ip: '10.246.4.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'Driver info: driver.version: unknown">
+                                    To Validate the Trace from Main Menu 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">13</td>
+
+
+                                <td class="lightgreentext">164.28</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="f3b133c92bd3afd80c6e8ce7f7b29f4fb60c567225b7d9e7e179e6a2e6d0ccf3.html" class="ellipsis" title="">
+                                    To test the Login functionality of SDK 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">3</td>
+
+
+                                <td class="lightgreentext">33.87</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="fd3c7edfc47e567c27b7b2e334bbee8f9b57d0565a375c8c0bbd46db38f876e9.html" class="ellipsis" title="">
+                                    To validate the Address List Report & Home Passed Report from Reports Dropdown 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">139.01</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="4d173f338adcdfddbaad6458b8173af4ebf3fb0bd572431b1673a5d719e5e0b2.html" class="ellipsis" title="">
+                                    To validate the Drawings tab 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">70.9</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="cbe7352cab9bddf5da7b9012e4c75af1ca995603a54add8404f3dfa62912655a.html" class="ellipsis" title="">
+                                    To validate the Equipment Report from Reports Dropdown 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">138.21</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="b2dc99ca71fa4dd83662950801fef3682542e46213fa7de7fe5113eededad788.html" class="ellipsis" title="">
+                                    To validate the Home Passed Report from Reports Dropdown 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">138.38</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="fc2e00d8e557ea7f88068d608a66a865c5c59ebdf346f227937a354345ae8fa0.html" class="ellipsis" title="">
+                                    To validate the Jobs Tab,Search and Details 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">156.88</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="98f5263e14919ed10dd2d26046d9e6d6397bf47ca1c91a3a8db3c6eccc64f6ce.html" class="ellipsis" title="">
+                                    To validate the LogOut icon 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">1</td>
+
+
+                                <td class="lightgreentext">2.23</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="18e471207ecf4ddffc0dc9fa87de2c77caf250cd5fc70a2c1b9f9953b7c1ff61.html" class="ellipsis" title="">
+                                    To validate the Search 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">40.55</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="70060df1b285da52b634d759dafcca4df0be548707e36f6e0be24952a24439af.html" class="ellipsis" title="">
+                                    To validate the Splice Report from Reports Dropdown 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">155.96</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="066bb569d703afe1634313bf5935a9d63472cc65da947013eda6a32b71fa0bfb.html" class="ellipsis" title="">
+                                    To validate the Trace Report from Reports Dropdown 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">9</td>
+
+
+                                <td class="lightgreentext">116.86</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="8ea6fb88cb665ace92267bcc810fe1b7bc1ddfd94ad2bee80f8ddb5bdf0a5c2b.html" class="ellipsis" title="">
+                                    To validate the WMTS 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">15.67</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity version 1.1.36</span>
+</div>
+
+
+</body>
+</html>

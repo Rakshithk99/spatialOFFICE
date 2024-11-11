@@ -1,0 +1,10 @@
+<acceptance-test-run title="To validate the LogOut icon" name="To validate the LogOut icon" description="" steps="1" successful="1" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2181" timestamp="2024-08-13T07:14:17.384+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="2179">
+    <description>Given I Log out</description>
+  </test-step>
+</acceptance-test-run>

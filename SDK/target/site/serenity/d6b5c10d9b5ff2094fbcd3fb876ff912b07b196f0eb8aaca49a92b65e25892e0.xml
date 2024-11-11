@@ -1,0 +1,89 @@
+<acceptance-test-run title="To Validate the Trace from Main Menu" name="To Validate the Trace from Main Menu" description="" steps="12" successful="9" failures="0" errors="1" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="164283" timestamp="2024-08-20T10:45:51.532+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>ID</header>
+      <header>OTDR Value</header>
+      <header>Margin</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+        <value>R229260882</value>
+        <value>300</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO, ID=R229260882, OTDR Value=300, Margin=1}" result="ERROR">
+    <test-step result="SUCCESS" duration="2670">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30862">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15834">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29233">
+      <description>Given I Enter the R229260882 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14142">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="20660">
+      <description>Then I navigate to Trace tab and select mutiple traces</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11793">
+      <description>And I Validate the Summary tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="13409">
+      <description>Then I Validate the Schematic tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="18963">
+      <description>And I Validate the Report tab</description>
+    </test-step>
+    <test-step result="ERROR" duration="6711">
+      <description>Then I Validate the Map tab</description>
+      <error>org.openqa.selenium.WebDriverException: element click intercepted: Element &lt;div role=&quot;tab&quot; mattablabelwrapper=&quot;&quot; cdkmonitorelementfocus=&quot;&quot; class=&quot;mdc-tab mat-mdc-tab mat-mdc-focus-indicator ng-star-inserted&quot; id=&quot;mat-tab-label-1-3&quot; tabindex=&quot;-1&quot; aria-posinset=&quot;4&quot; aria-setsize=&quot;5&quot; aria-controls=&quot;mat-tab-content-1-3&quot; aria-selected=&quot;false&quot; aria-disabled=&quot;false&quot;&gt;...&lt;/div&gt; is not clickable at point (581, 351). Other element would receive the click: &lt;span class=&quot;mat-mdc-button-touch-target&quot;&gt;&lt;/span&gt;
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.10 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54772}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir17600_655191445}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c27102643cbafb204f1a65788771f618
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: driver.version: unknown</error>
+      <exception>org.openqa.selenium.WebDriverException:element click intercepted: Element &lt;div role=&quot;tab&quot; mattablabelwrapper=&quot;&quot; cdkmonitorelementfocus=&quot;&quot; class=&quot;mdc-tab mat-mdc-tab mat-mdc-focus-indicator ng-star-inserted&quot; id=&quot;mat-tab-label-1-3&quot; tabindex=&quot;-1&quot; aria-posinset=&quot;4&quot; aria-setsize=&quot;5&quot; aria-controls=&quot;mat-tab-content-1-3&quot; aria-selected=&quot;false&quot; aria-disabled=&quot;false&quot;&gt;...&lt;/div&gt; is not clickable at point (581, 351). Other element would receive the click: &lt;span class=&quot;mat-mdc-button-touch-target&quot;&gt;&lt;/span&gt;
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.10 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54772}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir17600_655191445}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c27102643cbafb204f1a65788771f618
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: driver.version: unknown&#xd;
+[java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method), java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62), java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45), jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), stepPage.HomePage.HomePage.clickToolElement(HomePage.java:948), stepImplementation.HomePage.HomePageImplementation.validateMapTab(HomePageImplementation.java:570), stepDefinition.HomePage.HomePageDefinition.iValidateTheMapTab(HomePageDefinition.java:183), ✽.Then I Validate the Map tab(src/main/resources/features/Sanity.feature:121)]</exception>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And I Validate the OTDR tab by passing 300,1</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

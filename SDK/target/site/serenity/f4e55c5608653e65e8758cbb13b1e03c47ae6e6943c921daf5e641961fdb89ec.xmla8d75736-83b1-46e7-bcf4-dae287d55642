@@ -1,0 +1,10 @@
+<acceptance-test-run title="To validate the LogOut icon" name="To validate the LogOut icon" description="" steps="1" successful="1" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2114" timestamp="2024-08-13T11:52:14.283+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="2112">
+    <description>Given I Log out</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,40 @@
+<acceptance-test-run title="To Validate the Rf Levels from Main Menu" name="To Validate the Rf Levels from Main Menu" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="91556" timestamp="2024-08-20T06:52:56.559+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>RA3372883</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {ID=RA3372883}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="16278">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29686">
+      <description>Given I Enter the RA3372883 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14417">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6617">
+      <description>Then I Navigate to RF Levels Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="22216">
+      <description>And I Validate the RF Levels Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2333">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

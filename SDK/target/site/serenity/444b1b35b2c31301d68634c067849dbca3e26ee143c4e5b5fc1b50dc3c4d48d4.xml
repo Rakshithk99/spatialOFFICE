@@ -1,0 +1,13 @@
+<acceptance-test-run title="To Validate the Rf power Trace Report" name="To Validate the Rf power Trace Report" description="" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="43358" timestamp="2024-08-20T10:50:57.794+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="6416">
+    <description>Given I Navigate to Rf Power Trace Report</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="36938">
+    <description>Then I Validate the RF Power Trace Report</description>
+  </test-step>
+</acceptance-test-run>

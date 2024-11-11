@@ -1,0 +1,48 @@
+<acceptance-test-run title="To Validate the Splice Connection Report from Report Manager" name="To Validate the Splice Connection Report from Report Manager" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="129471" timestamp="2024-08-20T11:17:22.579+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>FiberSpliceID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+        <value>SC10018205</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO, FiberSpliceID=SC10018205}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3871">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30962">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29327">
+      <description>Then I Enter the SC10018205 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14427">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9969">
+      <description>Given I validate Report Manager Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21551">
+      <description>Then I Click on Create Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="16857">
+      <description>Then I create the Splice Connection Report with SC10018205 and verify the Report created in the Report Manager Dashboard</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2318">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

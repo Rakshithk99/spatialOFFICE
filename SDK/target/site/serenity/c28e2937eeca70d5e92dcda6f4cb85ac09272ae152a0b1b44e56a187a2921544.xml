@@ -1,0 +1,37 @@
+<acceptance-test-run title="To Create the XYZ Layer and validate the layer is created" name="To Create the XYZ Layer and validate the layer is created" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="65755" timestamp="2024-08-20T10:35:01.612+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2631">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30837">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15427">
+      <description>Then I Create the XYZ Layer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15090">
+      <description>And I Delete the XYZ Layer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1753">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

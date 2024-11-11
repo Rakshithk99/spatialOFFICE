@@ -1,0 +1,45 @@
+<acceptance-test-run title="To Validate the Set Master Circuit on Fibers" name="To Validate the Set Master Circuit on Fibers" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="88371" timestamp="2024-08-20T11:52:31.196+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>ID</header>
+      <header>Job</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>PLEC13144915</value>
+        <value>Master Circuit</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {ID=PLEC13144915, Job=Master Circuit}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="29428">
+      <description>When I Enter the PLEC13144915 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14327">
+      <description>Then I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5775">
+      <description>Given I validate the Jobs Tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11978">
+      <description>Then I Search for the Master Circuit in the Search Box and select the job</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5994">
+      <description>Then I navigate to Trace tab and select one of the trace</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11956">
+      <description>And I Click on the Master Circuit Button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8902">
+      <description>Then I Validate the Master Circuit Panel and Create a Master Circuit</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

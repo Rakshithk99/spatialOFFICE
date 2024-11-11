@@ -1,0 +1,53 @@
+<acceptance-test-run title="To validate the Jobs Tab,Search and Details" name="To validate the Jobs Tab,Search and Details" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="160159" timestamp="2024-08-20T06:42:34.610+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>ID</header>
+      <header>BOOKMARK</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+        <value>R229260882</value>
+        <value>Storage Loop</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO, ID=R229260882, BOOKMARK=Storage Loop}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3053">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31288">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5799">
+      <description>Given I validate the Jobs Tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="42102">
+      <description>And I Create Job</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29836">
+      <description>Given I Enter the R229260882 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14390">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14462">
+      <description>Then I Validate the Details layer of the Selected entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="17168">
+      <description>And I Validate the Book Mark Tab Storage Loop</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2052">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

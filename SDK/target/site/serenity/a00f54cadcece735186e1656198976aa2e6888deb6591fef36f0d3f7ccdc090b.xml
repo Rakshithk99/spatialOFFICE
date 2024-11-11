@@ -1,0 +1,46 @@
+<acceptance-test-run title="To Validate the ToolBar" name="To Validate the ToolBar" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="86685" timestamp="2024-08-20T06:34:27.937+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2623">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30953">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5898">
+      <description>Given I verify the Zoom tool</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="898">
+      <description>When I verify the Bell icon</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="17490">
+      <description>Then I verify the Settings icon</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11030">
+      <description>Then I verify the SDK help</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15900">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1883">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

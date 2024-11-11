@@ -1,0 +1,13 @@
+<acceptance-test-run title="To Validate the Previous View and Next View" name="To Validate the Previous View and Next View" description="" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="35599" timestamp="2024-08-20T11:51:18.331+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="17809">
+    <description>Given I Validate the Previous View</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="17787">
+    <description>Then I Validate the Next View</description>
+  </test-step>
+</acceptance-test-run>

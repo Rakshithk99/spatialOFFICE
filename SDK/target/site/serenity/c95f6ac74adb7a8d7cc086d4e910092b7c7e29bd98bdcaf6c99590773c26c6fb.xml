@@ -1,0 +1,51 @@
+<acceptance-test-run title="To validate the Address List Report" name="To validate the Address List Report" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="141299" timestamp="2024-08-20T07:03:28.591+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity_Postgres.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity_Postgres" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+      <header>ID</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/Postgres/SHAW01_SO</value>
+        <value>593011783</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/Postgres/SHAW01_SO, ID=593011783}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3106">
+      <description>Given I launch http://10.246.4.94/Postgres/SHAW01_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="31222">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15944">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="353">
+      <description>Then I Click on the reports dropdown</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29818">
+      <description>Then I Enter the 593011783 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14503">
+      <description>When I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="25977">
+      <description>Then I Navigate to Address List Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="18105">
+      <description>And I validate the Address List Report Panel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2265">
+      <description>Given I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

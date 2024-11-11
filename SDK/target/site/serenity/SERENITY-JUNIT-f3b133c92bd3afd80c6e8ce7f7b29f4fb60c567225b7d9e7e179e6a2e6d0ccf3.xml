@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="To Validate the Sanity Tests for SDK Application" skipped="0" tests="3" time="253.52" timestamp="2024-08-225 02:34:22"><testcase name="To test the Login functionality of SDK"/><testcase name="To Validate the Find Table"/><testcase name="To Validate the SpatialFilter"/></testsuite>

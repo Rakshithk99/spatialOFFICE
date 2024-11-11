@@ -1,0 +1,50 @@
+<acceptance-test-run title="To Validate the SpatialFilter" name="To Validate the SpatialFilter" description="" steps="6" successful="4" failures="0" errors="1" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="117916" timestamp="2024-08-20T11:11:55.536+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="11284">
+    <description>Given I Click on SpatialFilter Button</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="11415">
+    <description>Then I Validate the Spatial Filter for Current View</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="11337">
+    <description>Given I Click on SpatialFilter Button for the second time</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="34089">
+    <description>Then I Validate the Spatial Filter for Current Selection</description>
+  </test-step>
+  <test-step result="ERROR" duration="49786">
+    <description>Then I Validate the Spatial Filter for Draw Polygon Selection</description>
+    <error>org.openqa.selenium.WebDriverException: element click intercepted: Element &lt;button _ngcontent-ng-c1919120733=&quot;&quot; mat-flat-button=&quot;&quot; type=&quot;submit&quot; class=&quot;primary-button mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed mat-mdc-button-base mat-mdc-button-disabled&quot; mat-ripple-loader-uninitialized=&quot;&quot; mat-ripple-loader-class-name=&quot;mat-mdc-button-ripple&quot; mat-ripple-loader-disabled=&quot;&quot; disabled=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (753, 473). Other element would receive the click: &lt;div _ngcontent-ng-c1919120733=&quot;&quot; mat-dialog-actions=&quot;&quot; class=&quot;mat-mdc-dialog-actions mdc-dialog__actions dialog-actions&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.11 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55324}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir3236_1468433672}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3b097170e8a870a0fee8c19629b73598
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: driver.version: unknown</error>
+    <exception>org.openqa.selenium.WebDriverException:element click intercepted: Element &lt;button _ngcontent-ng-c1919120733=&quot;&quot; mat-flat-button=&quot;&quot; type=&quot;submit&quot; class=&quot;primary-button mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed mat-mdc-button-base mat-mdc-button-disabled&quot; mat-ripple-loader-uninitialized=&quot;&quot; mat-ripple-loader-class-name=&quot;mat-mdc-button-ripple&quot; mat-ripple-loader-disabled=&quot;&quot; disabled=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (753, 473). Other element would receive the click: &lt;div _ngcontent-ng-c1919120733=&quot;&quot; mat-dialog-actions=&quot;&quot; class=&quot;mat-mdc-dialog-actions mdc-dialog__actions dialog-actions&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.11 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55324}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir3236_1468433672}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3b097170e8a870a0fee8c19629b73598
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: driver.version: unknown&#xd;
+[java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method), java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62), java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45), jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source), java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), stepImplementation.HomePage.HomePageImplementation.SpatialFilterForPolygon(HomePageImplementation.java:1643), stepDefinition.HomePage.HomePageDefinition.iValidateTheSpatialFilterForDrawPolygonSelection(HomePageDefinition.java:573), ✽.Then I Validate the Spatial Filter for Draw Polygon Selection(src/main/resources/features/Sanity.feature:376)]</exception>
+  </test-step>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then I Log out</description>
+  </test-step>
+</acceptance-test-run>

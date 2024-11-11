@@ -1,0 +1,39 @@
+<acceptance-test-run title="To Validate the Find Table" name="To Validate the Find Table" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="94739" timestamp="2024-08-20T11:10:20.674+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>ID</header>
+      <header>CLASS</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>R426063263</value>
+        <value>Storage Loop</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {ID=R426063263, CLASS=Storage Loop}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="15853">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29287">
+      <description>Then I Enter the R426063263 for the Entity</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14123">
+      <description>Then I validate the Title of the Entity Selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="22821">
+      <description>Given I Navigate to Find table and search for a class Storage Loop</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="12652">
+      <description>Then I Validate the Menu items for the Find Table</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

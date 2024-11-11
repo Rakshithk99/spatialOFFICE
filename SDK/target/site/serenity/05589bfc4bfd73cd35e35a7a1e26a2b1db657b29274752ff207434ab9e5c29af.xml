@@ -1,0 +1,59 @@
+<acceptance-test-run title="Validating Theming for Graduated(Range)" name="Validating Theming for Graduated(Range)" description="" steps="7" successful="5" failures="0" errors="1" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="118100" timestamp="2024-08-20T11:58:14.639+10:00">
+  <user-story id="to-validate-the-smoke-tests-for-sdk-application" name="To Validate the Smoke Tests for SDK Application" path="src/main/resources/features/Smoke.feature"/>
+  <tags>
+    <tag name="To Validate the Smoke Tests for SDK Application" type="feature"/>
+    <tag name="Smoke" type="tag"/>
+  </tags>
+  <test-step result="SUCCESS" duration="26187">
+    <description>Given I Navigate to Theming</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="6787">
+    <description>Then I Click on Add Theme</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="4610">
+    <description>And I Navigate to Graduated Range</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="17456">
+    <description>Then I enter the details for Graduated Range</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="30975">
+    <description>And I Click on the Color Bar to select a Color</description>
+  </test-step>
+  <test-step result="ERROR" duration="32078">
+    <description>And I Add Min Max and Steps for Graduated Range</description>
+    <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button&quot;}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5ef674a0bf69979bc95df39fc9e52444
+*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: driver.version: unknown</error>
+    <exception>org.openqa.selenium.NoSuchElementException:no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button&quot;}
+  (Session info: chrome=127.0.6533.120)
+  (Driver info: chromedriver=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}),platform=Windows NT 10.0.19045 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56440}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, fedcm:accounts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.72 (9755e24ca85aa18ffa16c743f660a3d914902775-refs/branch-heads/6533@{#1760}), userDataDir=C:\WINDOWS\SystemTemp\scoped_dir5732_962739220}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=127.0.6533.120, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webauthn:extension:minPinLength=true, webauthn:extension:prf=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5ef674a0bf69979bc95df39fc9e52444
+*** Element info: {Using=xpath, value=//*[starts-with(@id,&quot;mat-tab-content&quot;)]/div/div[2]/button}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;AU-MELOCIQACL3&apos;, ip: &apos;10.246.4.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
+Driver info: driver.version: unknown&#xd;
+[java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method), java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62), java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45), stepPage.HomePage.HomePage.clickToolElement(HomePage.java:948), stepImplementation.HomePage.HomePageImplementation.AddMinMax(HomePageImplementation.java:2055), stepDefinition.HomePage.HomePageDefinition.addMinMaxStepsForGraduatedRange(HomePageDefinition.java:731), ✽.And I Add Min Max and Steps for Graduated Range(src/main/resources/features/Smoke.feature:309)]</exception>
+  </test-step>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then I Save the Theme</description>
+  </test-step>
+</acceptance-test-run>

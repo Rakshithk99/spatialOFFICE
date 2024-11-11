@@ -1,0 +1,46 @@
+<acceptance-test-run title="To Validate the ToolBar" name="To Validate the ToolBar" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="84125" timestamp="2024-08-20T10:33:37.424+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2358">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30808">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5740">
+      <description>Given I verify the Zoom tool</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="670">
+      <description>When I verify the Bell icon</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="17017">
+      <description>Then I verify the Settings icon</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9981">
+      <description>Then I verify the SDK help</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15803">
+      <description>Given I verify the Map Section</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1729">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

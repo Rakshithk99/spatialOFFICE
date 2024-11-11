@@ -1,0 +1,40 @@
+<acceptance-test-run title="To Validate the Base Layers Tab" name="To Validate the Base Layers Tab" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="183647" timestamp="2024-08-20T10:38:26.376+10:00">
+  <user-story id="to-validate-the-sanity-tests-for-sdk-application" name="To Validate the Sanity Tests for SDK Application" path="src/main/resources/features/Sanity.feature"/>
+  <tags>
+    <tag name="To Validate the Sanity Tests for SDK Application" type="feature"/>
+    <tag name="Sanity" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>DB</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>http://10.246.4.94/SHAW90_SO</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {DB=http://10.246.4.94/SHAW90_SO}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2841">
+      <description>Given I launch http://10.246.4.94/SHAW90_SO the Application</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="30826">
+      <description>When I enter the Credentials</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9437">
+      <description>Given I validate the Layers Tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="69827">
+      <description>Then I Validate the SpatialStorm Layers Tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="68855">
+      <description>And I Validate the Base Layers Tab</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1853">
+      <description>Then I Log out</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
